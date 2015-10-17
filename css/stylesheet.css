@@ -1,6 +1,6 @@
 body {
-    background-image: url("image/sparkler.jpg");
-    background-color: white;
+    background-image: url('image/sparkler.jpg');
+    background-color: blue;
     width:100%;
     font-family: helvetica, verdana;
 }
@@ -41,11 +41,11 @@ body {
     border-bottom-right-radius: 10px;
 }
 
-li a:first-child{ 
+li a:hover :first-child{ 
     background-color: yellow;
 }
 
-li a:last-child{ 
+li a:hover :last-child{ 
     background-color: pink;
 }
 
