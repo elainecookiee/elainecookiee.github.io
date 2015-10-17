@@ -1,5 +1,7 @@
 body {
-    background-image: url('image/sparker.jpeg') no-repeat;
+    background-image: url('image/sparker.jpg');
+    background-position: center;
+    background-repeat: repeat;
     width:100%;
     font-family: Verdana, Courier;
 }
@@ -37,4 +39,12 @@ body {
     background-color: palevioletred;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+/*About Me*/
+.aboutme {
+    text-align: center;
+    text-decoration: helvetica;
+    font-size: 16px;
+
 }
