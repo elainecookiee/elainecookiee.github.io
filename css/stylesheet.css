@@ -25,6 +25,7 @@ body {
     display: inline;
 }
 
+
 .nav ul li a{
     text-decoration: none;
     float: right;
@@ -41,10 +42,19 @@ body {
     border-bottom-right-radius: 10px;
 }
 
+.nav ul li a:first-child{ 
+    background-color: yellow;
+}
+
+.nav ul li a:last-child{ 
+    background-color: pink;
+}
+
 /*About Me*/
 .aboutme {
     text-align: center;
     text-decoration: helvetica;
     font-size: 16px;
+    padding: 20px 30px 20px 20px;
 
 }
