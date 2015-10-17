@@ -1,9 +1,8 @@
 body {
-    background-image: url('image/sparker.jpg');
-    background-position: center;
-    background-repeat: repeat;
+    background-image: url("image/sparker.jpg");
+    background-color: white;
     width:100%;
-    font-family: Verdana, Courier;
+    font-family: helvetica, verdana;
 }
 
 /* Nav Bar */
@@ -42,19 +41,22 @@ body {
     border-bottom-right-radius: 10px;
 }
 
-.nav ul li a:first-child{ 
+li a:first-child{ 
     background-color: yellow;
 }
 
-.nav ul li a:last-child{ 
+li a:last-child{ 
     background-color: pink;
 }
 
 /*About Me*/
 .aboutme {
     text-align: center;
-    text-decoration: helvetica;
     font-size: 16px;
     padding: 20px 30px 20px 20px;
+}
 
+span{
+    color: orange;
+    font-weight: bold;
 }
