@@ -1,0 +1,39 @@
+body {
+    background-color: url('image/sparker.jpeg');
+    font-family: Verdana, Courier;
+}
+
+/* Nav Bar */
+
+.nav {
+    margin-top: 40px;
+    height: 40px;
+    background-color: #292929;
+    width: 100%;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li{
+    list-style: none;
+    display: inline;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    float: right;
+    display: block;
+    padding: 10px 20px;
+    color: grey;
+    font-size: 12px;
+}
+
+.nav ul li a:hover {
+    color: white;
+    background-color: palevioletred;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
