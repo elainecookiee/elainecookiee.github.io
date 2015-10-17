@@ -1,5 +1,6 @@
 body {
-    background-color: url('image/sparker.jpeg');
+    background-image: url('image/sparker.jpeg') no-repeat;
+    width:100%;
     font-family: Verdana, Courier;
 }
 
