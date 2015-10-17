@@ -41,14 +41,6 @@ body {
     border-bottom-right-radius: 10px;
 }
 
-li a:hover :first-child{ 
-    background-color: yellow;
-}
-
-li a:hover :last-child{ 
-    background-color: pink;
-}
-
 /*About Me*/
 .aboutme {
     text-align: center;
