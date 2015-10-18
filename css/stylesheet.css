@@ -1,5 +1,4 @@
 body {
-    background-image: url('image/sparkler.jpg');
     width:100%;
     font-family: helvetica, verdana;
 }
@@ -10,6 +9,7 @@ body {
     height: 40px;
     background-color: #292929;
     width: 100%;
+    padding-top: 10px;
 }
 
 .nav ul {
