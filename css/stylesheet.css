@@ -32,6 +32,10 @@ body {
     font-size: 12px;
 }
 
+.nav ul a{
+    float: right;
+}
+
 .nav ul li a:hover {
     color: white;
     background-color: palevioletred;
