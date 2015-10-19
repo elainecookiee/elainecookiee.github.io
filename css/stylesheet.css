@@ -52,3 +52,19 @@ body {
     text-align: center;
     margin: 0 auto;
 }
+
+#btn-fb {
+    display: block;
+    width: 56px;
+    height: 56px;
+    background: url("images/fb.jpg");
+}
+
+#btn-fb:hover {
+    background-position: 0 -56px;
+}
+
+#btn-fb span {
+    position:absolute;
+    top:-999em;
+}
