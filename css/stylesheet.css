@@ -3,6 +3,15 @@ body {
     font-family: helvetica, verdana;
 }
 
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
 /* Nav Bar */
 
 .nav {
