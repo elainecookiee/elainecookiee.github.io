@@ -7,6 +7,12 @@ body {
     font-family: helvetica, verdana;
 }
 
+section {
+text-align: center;
+    font-size: 16px;
+    padding: 20px 30px 20px 20px;
+}
+
 a {
   text-decoration: none;
 }
