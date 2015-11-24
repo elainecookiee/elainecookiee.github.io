@@ -3,11 +3,20 @@ GENERAL
 *******************************/
 
 body {
-  font-family: 'PT Sans', sans-serif;
+    width:100%;
+    font-family: helvetica, verdana;
 }
 
 a {
   text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
 }
 
 img {
@@ -17,6 +26,7 @@ img {
 h3 {
   margin: 0 0 1em 0;
 }
+
 
 /*******************************
 NAVIGATION
@@ -41,6 +51,14 @@ nav li {
 nav a {
   font-weight: 800;
   padding: 15px 10px;
+}
+
+nav ul li a:hover {
+  color: white;
+  background-color: palevioletred;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: background .2s linear, border-radius 1s ease-in 1s;
 }
 
 /*******************************
@@ -163,47 +181,4 @@ PAGE: CONTACT
 
 .contact-info li.twitter a {
   background-image: url('../img/twitter.png');
-}
-
-
-
-/*******************************
-COLOURS
-*******************************/
-
-/* Site Body */
-body {
-  background-color: #fff;
-  color: #999;
-}
-
-/* Green Header */
-header {
-  background: #292929;
-  border-color: palevioletred;
-}
-
-/* nav background on mobile */
-nav {
-  background: #292929;
-}
-
-/* logo text */
-h1, h2 {
-  color: #fff;
-}
-
-/* Links */
-a {
-  color: #6ab47b; 
-}
-
-/* nav link */
-nav a, nav a:visited {
-  color: #fff;
-}
-
-/* selected link */
-nav a.selected, nav a:hover {
-  color: palevioletred;
 }
