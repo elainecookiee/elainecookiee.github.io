@@ -15,6 +15,7 @@ section {
 
 a {
   text-decoration: none;
+  color: lightgrey;
 }
 
 a:link {
