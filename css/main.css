@@ -8,9 +8,9 @@ body {
 }
 
 section {
-text-align: center;
-    font-size: 16px;
-    padding: 20px 30px 20px 20px;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px 30px 20px 20px;
 }
 
 a {
@@ -19,10 +19,12 @@ a {
 
 a:link {
     text-decoration: none;
+    color: black;
 }
 
 a:visited {
     text-decoration: none;
+    color: black;
 }
 
 img {
@@ -42,6 +44,7 @@ nav {
   text-align: center;
   padding: 10px 0;
   margin: 28px 0;
+  background-color: #292929;
 }
 
 nav ul {
