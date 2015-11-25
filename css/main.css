@@ -15,17 +15,14 @@ section {
 
 a {
   text-decoration: none;
-  color: grey;
 }
 
 a:link {
-    text-decoration: none;
-    color: grey;
+  text-decoration: none;
 }
 
 a:visited {
-    text-decoration: none;
-    color: grey;
+  text-decoration: none;
 }
 
 img {
@@ -87,7 +84,6 @@ header {
   margin: 0 0 30px 0;
   padding: 5px 0 0 0;
   width: 100%;
-  background-color: #292929;
 }
 
 #logo {
@@ -199,4 +195,45 @@ PAGE: CONTACT
 
 .contact-info li.twitter a {
   background-image: url('../img/twitter.png');
+}
+
+/*******************************
+COLOURS
+*******************************/
+
+/* Site Body */
+body {
+  background-color: #fff;
+  color: #999;
+}
+
+/* Grey Header */
+header {
+  background: #292929;
+  border-color: palevioletred;
+}
+
+/* nav background on mobile */
+nav {
+  background: #292929;
+}
+
+/* logo text */
+h1, h2 {
+  color: #fff;
+}
+
+/* Links */
+a {
+  color: #6ab47b; 
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: #fff;
+}
+
+/* selected link */
+nav a.selected, nav a:hover {
+  color: palevioletred;
 }
