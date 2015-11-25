@@ -72,7 +72,7 @@ nav ul li a:hover {
   background-color: palevioletred;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  transition: background .2s linear, border-radius 1s ease-in 1s;
+  transition: background .5s linear, border-radius 0.5s ease-in 0.5s;
 }
 
 /*******************************
