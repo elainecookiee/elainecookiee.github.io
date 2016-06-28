@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+	.st0{fill:#F7941E;}
+	.st1{fill:#F8B3B1;}
+	.st2{fill:#FFDE17;}
+]]>
+</style>
+<circle class="st2" cx="50" cy="50" r="31">
+	<animateTransform id="jumping"
+		 attributeName="transform"
+		 attributeType="XML"
+		 type="rotate"
+		 from="0 50 50"
+		 to="45 50 50"
+		 dur="2s"
+		 repeatCount="indefinite"/>
+</circle>
+<path class="st0" d="M50,16.966c12.492,0,0-10.896,0-10.896S37.508,16.966,50,16.966z">
+		<animateTransform attributeName="transform"
+			 attributeType="XML"
+			 type="rotate"
+			 from="0 50 50"
+			 to="360 50 50"
+			 dur="10s"
+			 repeatCount="indefinite"/>
+
+</path>
+<path class="st0" d="M50.016,83.999c-12.491-0.07-0.061,10.896-0.061,10.896S62.508,84.069,50.016,83.999z">
+		<animateTransform attributeName="transform"
+			 attributeType="XML"
+			 type="rotate"
+			 from="0 50 50"
+			 to="360 50 50"
+			 dur="10s"
+			 repeatCount="indefinite"/>
+</path>
+<path class="st0" d="M75.697,25.19c-8.271-9.362,8.166-7.214,8.166-7.214S83.969,34.552,75.697,25.19z">
+		<animateTransform attributeName="transform"
+			 attributeType="XML"
+			 type="rotate"
+			 from="0 50 50"
+			 to="360 50 50"
+			 dur="10s"
+			 repeatCount="indefinite"/>
+</path>
+<path class="st0" d="M26.131,25.19c8.271-9.362-8.166-7.214-8.166-7.214S17.86,34.552,26.131,25.19z">
+		<animateTransform attributeName="transform"
+			 attributeType="XML"
+			 type="rotate"
+			 from="0 50 50"
+			 to="360 50 50"
+			 dur="10s"
+			 repeatCount="indefinite"/>
+</path>
+<path class="st0" d="M83.876,50.099c-0.437-12.485,10.89-0.381,10.89-0.381S84.312,62.584,83.876,50.099z">
+		<animateTransform attributeName="transform"
+			 attributeType="XML"
+			 type="rotate"
+			 from="0 50 50"
+			 to="360 50 50"
+			 dur="10s"
+			 repeatCount="indefinite"/>
+</path>
+<path class="st0" d="M16.005,50.099c0.437-12.485-10.89-0.381-10.89-0.381S15.569,62.584,16.005,50.099z">
+		<animateTransform attributeName="transform"
+			 attributeType="XML"
+			 type="rotate"
+			 from="0 50 50"
+			 to="360 50 50"
+			 dur="10s"
+			 repeatCount="indefinite"/>
+</path>
+<path class="st0" d="M75.392,73.755c7.856-9.713,8.472,6.853,8.472,6.853S67.535,83.468,75.392,73.755z">
+		<animateTransform attributeName="transform"
+			 attributeType="XML"
+			 type="rotate"
+			 from="0 50 50"
+			 to="360 50 50"
+			 dur="10s"
+			 repeatCount="indefinite"/>
+</path>
+<path class="st0" d="M25.352,74.4c-7.856-9.713-8.472,6.853-8.472,6.853S33.208,84.113,25.352,74.4z">
+		<animateTransform attributeName="transform"
+			 attributeType="XML"
+			 type="rotate"
+			 from="0 50 50"
+			 to="360 50 50"
+			 dur="10s"
+			 repeatCount="indefinite"/>
+</path>
+<path d="M38.985,58.426c0,1.381-1.119,2.5-2.5,2.5l0,0c-1.381,0-2.5-1.119-2.5-2.5l0,0c0-1.381,1.119-2.5,2.5-2.5l0,0
+	C37.866,55.926,38.985,57.045,38.985,58.426L38.985,58.426z">
+	<animateTransform id="jumping"
+		 attributeName="transform"
+		 attributeType="XML"
+		 type="translate"
+		 dur="2s"
+		 values="0,5;0,-5;0,5"
+		 repeatCount="indefinite"/>
+</path>
+<path d="M65.181,58.913c0,1.381-1.119,2.5-2.5,2.5l0,0c-1.381,0-2.5-1.119-2.5-2.5l0,0c0-1.381,1.119-2.5,2.5-2.5l0,0
+	C64.062,56.413,65.181,57.532,65.181,58.913L65.181,58.913z">
+	<animateTransform id="jumping"
+		 attributeName="transform"
+		 attributeType="XML"
+		 type="translate"
+		 dur="2s"
+		 values="0,5;0,-5;0,5"
+		 repeatCount="indefinite"/>
+</path>
+<ellipse class="st1" cx="30.139" cy="65.355" rx="5.345" ry="2.155">
+	<animateTransform id="jumping"
+		 attributeName="transform"
+		 attributeType="XML"
+		 type="translate"
+		 dur="2s"
+		 values="0,3;0,-3;0,3"
+		 repeatCount="indefinite"/>
+</ellipse>
+<ellipse class="st1" cx="68.026" cy="66.217" rx="5.345" ry="2.155">
+	<animateTransform id="jumping"
+		 attributeName="transform"
+		 attributeType="XML"
+		 type="translate"
+		 dur="2s"
+		 values="0,3;0,-3;0,3"
+		 repeatCount="indefinite"/>
+</ellipse>
+<rect x="44.483" y="67.511" width="11.034" height="0.861">
+	<animateTransform id="jumping"
+		 attributeName="transform"
+		 attributeType="XML"
+		 type="translate"
+		 dur="2s"
+		 values="0,5;0,-5;0,5"
+		 repeatCount="indefinite"/>
+</rect>
+<rect x="55.139" y="66.552" width="0.758" height="2.78">
+	<animateTransform id="jumping"
+		 attributeName="transform"
+		 attributeType="XML"
+		 type="translate"
+		 dur="2s"
+		 values="0,5;0,-5;0,5"
+		 repeatCount="indefinite"/>
+</rect>
+<rect x="43.759" y="66.433" width="0.758" height="2.567">
+	<animateTransform id="jumping"
+		 attributeName="transform"
+		 attributeType="XML"
+		 type="translate"
+		 dur="2s"
+		 values="0,5;0,-5;0,5"
+		 repeatCount="indefinite"/>
+</rect>
+<path d="M47.625,57"/>
+</svg>
