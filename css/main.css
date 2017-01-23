@@ -1,0 +1,252 @@
+/*============================================*/
+/*GENERAL*/
+/*============================================*/
+html{
+	font-size: 1em;
+	text-decoration: none;
+	max-width: 100%;
+}
+
+
+body{
+	text-align: center;
+    background: #F4F6F7;
+    margin-top:4em;
+}
+
+html, body{
+    padding: 0;
+    height: 100%;
+    font-family: "Raleway", Calibri, sans-serif;
+}
+
+h1{
+    font-weight: bold;
+    font-family: "Raleway", Calibri, sans-serif;
+}
+
+
+h2{
+    font-size: 1.5em;
+}
+
+p{
+    font-size: 1.25em;
+    margin: 0;
+}
+
+ol{
+    text-align: left;
+}
+
+ul{
+	list-style-type: none;
+	font-family: 'Raleway', Calibri, sans-serif;
+	font-size: .75 em;
+    padding: 0;
+    /*text-align: left;*/
+    margin: 0;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #003e58;
+}
+
+::selection {
+    color: white;
+    background: #003e58;
+}
+
+
+/*NAVIGATION*/
+
+#menu{
+    position:fixed;
+    top:0px;
+    width:100%;
+    height:50px;
+    font-size: 1.5em;
+    background-color:white;
+    box-shadow: 2px 2px 2px rgba(192,192,192, 0.2);
+    color: #FFFFFF;
+    z-index:9999;
+    /*display: none;*/
+}
+
+#navigation a{
+    padding: 1em;
+    display: inline;
+}
+
+a, a:visited, a:active {
+    text-decoration: none;
+    font-family: Calibri, sans-serif;
+    font-size: .6em;
+    letter-spacing: 1px;
+    color: dimgrey;
+    font-weight: bold;
+    font-family: "Raleway", Calibri, sans-serif;
+    padding: 0;
+}
+
+a:hover {
+    color: #003e58;
+}
+
+a.active{
+    color: #003e58;
+    border-bottom: 1px solid #003e58;
+}
+
+nav{
+    padding-top: 1em;
+}
+
+/*===========================
+/*PORTFOLIO PAGE*/
+/*===========================
+
+/*3 COL LAYOUT*/
+.float{
+    width: 60%;
+    height: 30%;
+    background-color: white;
+    padding: 1em;
+    margin: 2em auto;
+    display: flex;
+    
+}
+
+.folio{
+    width: 40%;
+    height: 40%;
+    padding: .5em;
+}
+
+ul.info{
+    text-align: left;
+    padding-top: 10%;
+    padding-left: 5%;
+}
+
+/*===========================
+/*CASE STUDIES
+/*===========================*/
+
+.container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.section{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.section p {
+    text-align: left;
+    width: 50%;
+    margin: 0;
+    padding: 1em;
+}
+
+.section:nth-child(odd) {
+    background-color: white;
+}
+
+.section:nth-child(even) {
+    background-color: #F4F6F7;
+}
+
+.casestudy {
+    margin-bottom: 2em;
+}
+
+/*===========================
+/*PROCESS PAGE*/
+/*===========================*/
+.item{
+    max-width: 60%;
+    margin: 4em auto;
+}
+
+
+/*===========================
+/*ABOUT PAGE*/
+/*===========================*/
+#pic{
+}
+
+
+
+
+/*===============================
+FOOTER
+================================*/
+footer{
+    position: relative;
+}
+
+.social{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: .5em;
+    background-color: black;
+    text-align: center;
+    height: 40px;
+}
+
+footer img{
+    margin: auto 0.5em;
+}
+
+/*===============================
+MEDIA QUERIES
+================================*/
+
+/*ONE Column Layout*/
+@media screen and (max-width: 1030px) {
+    .folio{
+        margin: 0 auto;
+    }
+    
+    .float{
+        width: 80%;
+        margin: 2em auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    ul.info{
+        text-align: center;
+        padding: 0;
+    }
+    
+    .item{
+        max-width: 90%;
+        margin: 4em auto;
+    }
+    
+    img{
+        width: 100%;
+    }
+        
+    .section p, h1 {
+        text-align: left;
+        width: 90%;
+        margin: 0;
+        padding-bottom: 0.5em;
+    }
+
+    .social{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+    }
+}

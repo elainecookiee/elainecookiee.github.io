@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset=utf-8>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Elaine Tran - UI/UX Portfolio</title>
+</head>
+
+<body>
+<nav id="menu">
+    <!--<img id="logo" src="images/logo.png" /> -->
+    <div id="navigation">
+        <a class='home' href="portfolio.html">PORTFOLIO</a>
+        <a href="#process">PROCESS</a>
+        <!--<a href="#writing">WRITING</a>-->
+        <a class='about' href="#about">ABOUT</a>
+    </div>
+</nav>
+</div>
+
+
+<!--CASE STUDY -->
+<div>
+    <!--PROJECT BANNER-->
+
+    <!--PREVIEW BANNER-->
+    <div><a href= "#"><img src= "images/banner3.png" width= "100%"/></a></div>
+    <div class = 'container'>
+        <div class= 'section'>
+            <h1 class="t">MY ROLE</h1>
+            <p>This project took place September to October 2016. I designed and developed my first website, a personalized travel inspiration site, using HTML, CSS, JavaScript and PHP.</p>
+            <img class="casestudy" src= "images/travel_final.png" width= "50%"/>
+            <!--<img class="casestudy" src= "images/ft_sketch.jpg" width= "50%"/>-->
+        </div>
+        <div class= 'section'>
+            <h2>THE CHALLENGE</h2>
+            <h1>NO EXTERNAL LIBRARIES</h1>
+            <p>The requirements for this first project was to build a responsive site without external libraries. The challenge was how to go from a conceptualized idea into executable parts.</p>
+        </div>
+        <div class= 'section'>
+            <h2>THE APPROACH</h2>
+            <h1>THE DESIGN PROCESS</h1>
+            <p>The design context for the project was to decide our own challenge. My approach was to have purpose in my work. I wanted to bring the concept to life by figuring out what i wanted my learning outcomes to be as well as the tools and skills I wanted practice using.</p>
+        </div>
+        <div class= 'section'>
+            <h1>STUMBLES</h1>
+            <p><strong>// Multiple versions of the site</strong></p>
+            <p>I started on one version of the site before being introduced to CSS flex box layouts, positioning and media queries which would have been very helpful to know before.</p>
+            <p><strong>// Adding class active on the Navigation</strong></p>
+            <p>I created an event listener that would add or remove CSS styling for the active class depending on the user’s current scroll location on the screen.</p>
+            <p>The issue was that styling from the previous section could not be removed since the last section of the page ‘connect’ would never reach the top of the screen. After multiple tries, the best solution was to subtract the top of the previous section by the pixel height of the ‘connect’ div.</p>
+            <img class="casestudy" src= "images/travel_stumble.png" width= "60%"/>
+            <p><strong>// Incorporating PHP</strong></p>
+            <p>Originally, I wanted to have a PHP function that would randomly display background images from an array at a set interval. However, there are no timers in PHP because once the server executes PHP it sends the finished HTML result to the browser. I used JavaScript instead.</p>
+            <img class="casestudy" src= "images/travel_randBg.png" width= "80%"/>
+        </div>
+        <div class= 'section'>
+            <h1>VICTORIES</h1>
+            <p><strong>// Setting checkpoints</strong></p>
+            <p>One thing that I have learn through my journey of self-learning is that building takes a lot of time. Thus, I started on the project a month before and set checkpoints every week to see how I have progressed.</p>
+            <p><strong>// Adding in a Gallery Feature</strong></p>
+            <p>I finished the site at the beginning of the week and took the extra time to build a responsive gallery. I used PHP to randomize the order of the divs displayed in the gallery.</p>
+            <img class="casestudy" src= "images/travel_mobile.png" width= "80%"/>
+        </div>
+        <div class= 'section'>
+            <h1>RELECTIONS -WHAT I LEARNED</h1>
+            <p>I learned that the process of building helps to solidify my skills by giving it context. A place to make errors and see how things work together.
+                My next steps to learning would be embracing variation in terms of the environment and context of use. </p>
+        </div>
+
+        <!--<footer> -->
+        <!--<div class='social'>-->
+        <!--<a href="https://www.facebook.com/" target="_blank" alt="Facebook"><img src="images/icon-fb.svg" height="30"></a>-->
+        <!--<a href="https://twitter.com/" target="_blank" alt="Twitter"><img src="images/icon-twitter.svg" height="30"></a>-->
+        <!--<a href="https://www.instagram.com/" target="_blank" alt="Instagram"><img src="images/icon-ig.svg" height="30"></a>-->
+        <!--</div>-->
+        <!--</footer>-->
+
+</body>
+</html>
