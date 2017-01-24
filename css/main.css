@@ -58,7 +58,7 @@ ul{
     background: #003e58;
 }
 
-.button{
+.button, .button:hover{
     background-color:transparent;
     border: solid 1px #d3d3d3;
     -moz-border-radius: 2px;
