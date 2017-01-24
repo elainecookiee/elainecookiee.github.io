@@ -58,6 +58,28 @@ ul{
     background: #003e58;
 }
 
+.button{
+    background-color:transparent;
+    border: solid 1px #d3d3d3;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    cursor: pointer;
+    color: #d3d3d3;
+    font-family: Calibri, sans-serif;
+    font-size: .75em;
+    padding: 8px 24px;
+    text-decoration: none;
+    margin-top: 2em;
+}
+
+.button:hover{
+    border: solid 1px #003e58;
+    color: #003e58;
+    outline: 0;
+    box-shadow: none;
+}
+
 
 /*NAVIGATION*/
 
@@ -77,12 +99,15 @@ ul{
 #navigation a{
     padding: 1em;
     display: inline;
+    font-size: .6em;
+}
+
+#navigation a.active{
+    border-bottom: 1px solid #003e58;
 }
 
 a, a:visited, a:active {
     text-decoration: none;
-    font-family: Calibri, sans-serif;
-    font-size: .6em;
     letter-spacing: 1px;
     color: dimgrey;
     font-weight: bold;
@@ -96,7 +121,6 @@ a:hover {
 
 a.active{
     color: #003e58;
-    border-bottom: 1px solid #003e58;
 }
 
 nav{
@@ -248,5 +272,12 @@ MEDIA QUERIES
         flex-direction: row;
         justify-content: center;
         margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .folio {
+        margin: 0 auto;
+        width: 80%;
     }
 }

@@ -54,9 +54,9 @@ $(document).ready(function() {
                 showViaKeydown(next);
                 break;
 
-            // up
-            case 38:	showViaKeydown("#process");
-                break;
+            // // up
+            // case 38:	showViaKeydown("#process");
+            //     break;
 
             // right
             case 39:
@@ -76,9 +76,9 @@ $(document).ready(function() {
 
                 break;
 
-            // down
-            case 40:	showViaKeydown("#about");
-                break;
+            // // down
+            // case 40:	showViaKeydown("#about");
+            //     break;
         }
     });
 });
