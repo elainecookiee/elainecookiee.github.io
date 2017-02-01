@@ -5,24 +5,13 @@ var currentPage = (home);
 $(document).ready(function() {
 
     //fades in menu on scroll
-    // var a = $("#menu").offset().top;
-    //
     // $(window).scroll(function(){
-    //     if ($(this).scrollTop() > a) {
-    //         $('#menu').fadeIn(500);
+    //     if ($(this).scrollTop() > 0) {
+    //         $('#menu').fadeIn(500).css('background-color', 'white');
     //     } else {
-    //         $('#menu').fadeOut(500);
+    //         $('#menu');
     //     }
     // });
-
-    //fades in menu on scroll
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 0) {
-            $('#menu').fadeIn(500).css('background-color', 'white');
-        } else {
-            $('#menu');
-        }
-    });
 
     // hides all DIVs with the CLASS container
     // and displays the one with the ID 'home' only
@@ -54,10 +43,6 @@ $(document).ready(function() {
                 showViaKeydown(next);
                 break;
 
-            // // up
-            // case 38:	showViaKeydown("#process");
-            //     break;
-
             // right
             case 39:
                 var next = $('.active').next().attr('href');
@@ -75,10 +60,6 @@ $(document).ready(function() {
                 showViaKeydown(next);
 
                 break;
-
-            // // down
-            // case 40:	showViaKeydown("#about");
-            //     break;
         }
     });
 });
@@ -109,41 +90,3 @@ $(function() {
         $(this).addClass("active");
     });
 });
-
-//left and right navigates continuously to next page
-//up and down navigates to next section
-//cycle through all items in both directions without stopping
-
-
-//find all elements with class of active
-//keep track of previous page (because we are moving left)
-//if nothing comes before the current page then set active class on About
-//so that it cycles through without stopping
-// window.location.href = 'portfolio.html' + next;
-
-//remove class active from all a tags of nav
-// add class to the one we clicked
-
-
-
-
-// if ($("*:focus").is("textarea, input"))
-//     return;
-// if (e.keyCode == 37) {
-//
-// }
-// if (e.keyCode == 39) {
-//     var nextPage = $('.navigation .selected').next().attr('href');
-//     if (!nextPage)
-//         nextPage = "#\\Welcome";
-//     $(nextPage + " .scrollPanel").scrollTop(0);
-//     window.location.href = nextPage
-// }
-// if (e.keyCode == 38) {
-//     prevAnchor();
-//     return false
-// }
-// if (e.keyCode == 40) {
-//     nextAnchor();
-//     return false
-// }
