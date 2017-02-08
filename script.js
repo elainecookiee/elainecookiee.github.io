@@ -3,7 +3,6 @@ var currentPage = (home);
 
 
 $(document).ready(function() {
-
     //fades in menu on scroll
     // $(window).scroll(function(){
     //     if ($(this).scrollTop() > 0) {
