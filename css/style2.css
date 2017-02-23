@@ -177,13 +177,11 @@ hr{
 		display: flex;
 		justify-content: center;
 		text-align: center;
-		margin-top: 25%;
 		margin-bottom: 20%;
 	}
 
 	.url{
-		/*display: none;*/
-		visibility: hidden;
+		display: none;
   		opacity: 0;
 	  	-webkit-transition: opacity 600ms, visibility 600ms;
 	  	transition: opacity 600ms, visibility 600ms;
@@ -217,10 +215,6 @@ hr{
 
 	#skills{
 		margin-left: 25%;
-	}
-
-	.social{
-		margin-top: 15%;
 	}
 
 	.label{
@@ -274,11 +268,9 @@ hr{
 	}
 
 	.url{
-		height: 10%;
-		padding: 0;
-		margin-top: 1em;
-		visibility: visible;
+		display: list-item;
   		opacity: 1;
+  		margin-top: .5em;
 	}
 
 	li.full-link{
@@ -301,14 +293,12 @@ hr{
 	}
 
 	#left{
-/*		background-color: #d3d3d3;*/
 		width: 50%;
 		padding-left: 10%;
 		margin-top: 1em;
 	}
 
 	.content{
-		/*background-color: pink;*/
 		margin: 0 0.25em auto;
 	}
 
@@ -374,8 +364,22 @@ hr{
 }
 
 @media (min-width: 600px) and (orientation: landscape){
+	#grey{
+		height: 35%;
+	}
+
+	#profile{
+		width: 15%;
+		margin-left: 42.5%;
+		margin-top: 0;
+	}
+
+	header{
+		margin: .5em 0;
+	}
+
 	ul.social{
-		margin: 1em;
+		margin: 0;
 	}
 
 	#skills{
