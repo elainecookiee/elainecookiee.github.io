@@ -201,7 +201,7 @@ nav{
 	}
 
 	#description{
-	    margin: 5%;
+	    margin: 1em;
 	}
 
    /* Case Study Layout*/
@@ -343,7 +343,7 @@ nav{
         width: 60%;
     } 
 
-    .ft h5, p{
+    .ft h5{
         width: 70%;
         margin: 1.5em 15%;
     }
