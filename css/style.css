@@ -71,11 +71,13 @@ iframe{
 @media (min-width: 300px) {
 	html { background: white; }
 
+  p { font-size: 1.125em;}
+
 	.navigation{
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-end;
-    	margin: 5%;
+    margin: 5% 5% 15% 5%;
 	}
 
 	.navigation li{
@@ -94,7 +96,7 @@ iframe{
 	  align-items: center;
 	}
 
-	.overlay {
+	.overlay{
 	  position: absolute;
 	  top: 0;
 	  bottom: 0;
@@ -118,13 +120,9 @@ iframe{
 		margin: 0 5%;
 	}
 
-	.box:hover .overlay{
-		opacity: 1;
-	}
+	.box:hover .overlay{ opacity: 1; }
 
-	.item{
-		margin-top: 10%;
-	}
+	.item{ margin-top: 10%; }
 
 	.item img{
 		width: 100%;
@@ -142,9 +140,9 @@ iframe{
     margin: 0;
   }
 
-  .bottom-nav{
-    text-align: center;
-  }
+  #pic{ width: 70%; }
+
+  .bottom-nav{ text-align: center;}
 
 	footer{
 		padding: 2em;
@@ -157,11 +155,15 @@ iframe{
 /*MEDIUM*/
 @media (min-width: 600px) {
 
-	.item h4{
-		text-align: center;
-	}
+  p { font-size: 1em;}
+
+  .navigation {margin: 5%;}
+
+	.item h4{ text-align: center;}
 
   .section{padding: 2em 15%;}
+
+  #pic{ width: 40%; }
 	
 }
 
@@ -207,7 +209,10 @@ iframe{
       width: 60%;
       margin-left: 20%;
     }
-    .section{padding: 2em 25%;}
+
+    .section{ padding: 2em 25%;}
+
+    #pic{ width: 20%; }
 
 
   
