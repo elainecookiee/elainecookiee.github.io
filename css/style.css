@@ -1,7 +1,5 @@
-/*GENERAL*/
-
-html { /*1.125 Major Second*/
-	font: normal 100%/1.5;
+html {
+	font: normal 100%/1.5 Roboto, Arial, sans-serif; /* 1.200 Minor Third*/
 	line-height: 1.5;
 }
 
@@ -11,366 +9,216 @@ html, body{
 	height: 100%;
 }
 
-html, h1, h2, h3, h4, h5, h6, p, a, li{
-    line-height: 1.5;
-    font-family: "Raleway", Calibri, sans-serif;
+a{
+  color: black;
+  text-decoration: none;
 }
-h1 { font-size: 1.802em; }
-h2 { font-size: 1.602em; }
-h3 { font-size: 1.424em; }
-h4 { font-size: 1.266em; }
-h5 { font-size: 1.125em; }
+
+/*a:link{
+  color: black;
+  text-decoration: none;
+}*/
+
+/*a:visited{
+  color: #e78e8e;
+}*/
+
+a:hover, .active{
+	color: #e78e8e;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	line-height: 1.5;
+}
+
+h1 { font-size: 2.4888em; }
+h2 { font-size: 2.074em; }
+h3 { font-size: 1.728em; }
+h4 { font-size: 1.44em }
+h5 { font-size: 1.2em; }
 h6 { font-size: 1em; }
-p {
-	font-size: 1em;
-	margin: .5em 0;
+
+.home{ opacity: .7; }
+.home:hover{ opacity: 1; }
+
+.box{
+	position: relative;
 }
 
-/*BANNER STYLING*/
-
-.banner-one{
-    background-color: #060f20;
-    width: 100%;
-    height: 100%;
-}
-
-.tcr{
-    position: absolute;
-    top: 40%;
-    width: 80%;
-    text-align: center;
-    margin: 0 10%;
-}
-
-.ft, .travel{
-    position: absolute;
-    top: 35%;
-    width: 70%;
-    text-align: center;
-    margin: 0 15%;
-}
-
-.tcr h5{
-    margin-top: 2em;
-    color: #E6D7B8;
-}
-
-.ft h5, .ft p{
-    color: white;
-    margin-top: 1.5em;
-}
-
-.ft p{
-    color: grey;
-}
-
-.travel h5{
-    margin-top: 1.5em;
-    color: #95BAD8;
-}
-
-.bg{
- /*   background: url("../images/banner.jpg");*/
-    background-color: pink;
-    max-width:100%;
-    height:auto;
-}
-
-/*BUTTON*/
-
-.button, .button:hover{
-    background-color:transparent;
-    border: solid 1px #d3d3d3;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    display: inline-block;
-    cursor: pointer;
-    font-size: .75em;
-    padding: 8px 24px;
-    text-decoration: none;
-    margin-top: 2em;
-}
-
-.button:hover{
-    border: solid 1px #003e58;
-    color: #003e58;
-    outline: 0;
-}
-
-/*NAVIGATION*/
-
-#menu{
-	text-align: center;
-    position:fixed;
-    top:0;
-    width:100%;
-    height:50px;
-    font-size: 1.5em;
-    background-color:white;
-    box-shadow: 2px 2px 2px rgba(192,192,192, 0.2);
-    color: #FFFFFF;
-    z-index:9999;
-}
-
-#navigation a{
-    padding: 1em;
-    display: inline;
-    font-size: .6em;
-}
-
-#navigation a.active{
-    border-bottom: 1px solid #003e58;
-}
-
-a, a:visited, a:active {
-    text-decoration: none;
-    letter-spacing: 1px;
-    color: dimgrey;
-    font-weight: bold;
-    font-family: "Raleway", Calibri, sans-serif;
-    padding: 0;
-}
-
-a:hover {
-    color: #003e58;
-}
-
-a.active{
-    color: #003e58;
-}
-
-nav{
-    padding-top: 1em;
-}
-
-.section:nth-child(odd) {
-    background-color: white;
+.grey p{
+	color: grey;
 }
 
 .section:nth-child(even) {
+    background-color: white;
+}
+
+.section:nth-child(odd) {
     background-color: #F4F6F7;
 }
 
+#description{
+  text-align: center;
+}
 
+iframe{
+  margin-left: 10%;
+}
 
-/***** Media Queries *****/
+/*Media Queries*/
 
-/***** SMALL *****/
-@media only screen and (min-width: 300px) {
-	html { background: #F4F6F7; }
-    
-    .float{
-        width: 90%;
-        margin: 2em auto;
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        padding-bottom: 1em;
+/*SMALL*/
+@media (min-width: 300px) {
+	html { background: white; }
 
-    }
-    
-    .info{
-        text-align: center;
-        padding: 0;
-    }
-    
-    .item{
-    	text-align: center;
-        max-width: 90%;
-        margin: 5em auto;
-    }
-    
-    img.folio{
-    	padding: 10% 0;
-    	margin: 0 auto;
-        width: 80%;
-    }
-
-    img.process{
-    	width: 100%;
-    }
-
-    #about{
-    	text-align: center;
-    	margin-bottom: 3em;
-    }
-
-    #pic{
-	    width: 50%;
-        margin-top: 5em;
+	.navigation{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+    	margin: 5%;
 	}
 
-	#description{
-	    margin: 1em;
+	.navigation li{
+		padding: 1em;
 	}
 
-   /* Case Study Layout*/
-    .section{
-    	padding: 5%;
-    }
+  .absolute{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+  }
 
-    .section p{
-        margin-top: 2em;
-    }
+	.center{
+		display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	}
 
-    .section h1, .section h2{
-    	text-align: center;
-    }
+	.overlay {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 5%;
+	  right: 0;
+	  height: 100%;
+	  width: 90%;
+	  opacity: 0;
+	  transition: .4s ease; 
+	  background-color: rgba(0,0,0,.6);
+	}
 
-    .casestudy{
-    	padding: 0;
-    	margin-top: 2%;
-    	width: 100%;
-    } 
+	.text{
+	  color: white;
+	  text-align: center;
+	  margin-top: 20%;
+	}
 
-    div#bg{
-        background: url('../images/tcr_small.png') no-repeat;
-        background-size: 100%;
-        width: 100%;
-        height: 100%;
-    }
+	.card, .gallery, .casestudy{
+		width: 90%;
+		margin: 0 5%;
+	}
 
-    div#bg2{
-        background: url('../images/ft_small.png') no-repeat;
-        background-size: 100%;
-        width: 100%;
-        height: 100%;
-    }
+	.box:hover .overlay{
+		opacity: 1;
+	}
 
-    div#bg3{
-        background: url('../images/travel_small.png') no-repeat;
-        background-size: 100%;
-        width: 100%;
-        height: 100%;
-    }
+	.item{
+		margin-top: 10%;
+	}
+
+	.item img{
+		width: 100%;
+		margin-bottom: 5%;
+	}
+
+  .project{ width: 100%; }
+
+  .section{ padding: 1em;}
+
+  .section p, .section h3{ margin-bottom: 1em; }
+
+  .section img{
+    width: 100%;
+    margin: 0;
+  }
+
+  .bottom-nav{
+    text-align: center;
+  }
+
+	footer{
+		padding: 2em;
+		text-align: center;
+	}
+
 }
 
 
-/***** MEDIUM *****/
-@media only screen and (min-width: 600px) {
-  	.float{
-  		width: 80%;
+/*MEDIUM*/
+@media (min-width: 600px) {
+
+	.item h4{
+		text-align: center;
+	}
+
+  .section{padding: 2em 15%;}
+	
+}
+
+/*LARGE*/
+@media (min-width: 960px) {
+
+  	.navigation{
+  		margin: 3% 10% 5% 0;
   	}
 
-    img.folio{
-    	padding: 5%;
-        width: 50%;
+    .absolute{ top: 12%; left: 45%; }
+
+  	.overlay{
+  		left: 0;
+  		width: 100%;
+  	}
+
+  	.clearfix{
+  		display: flex;
+  		flex-direction: column;
+  		align-items: center;
+  		width: 80%;
+  		margin: 0 10%;
+  	}
+
+  	.row1, .row2{
+  		display: flex;
+  		flex-direction: row;
+  		margin: 0;
+  	}
+
+  	.card{
+  		width: 100%;
+  		margin: 0;
+  	}
+
+  	.gallery{
+  		width: 60%;
+  		margin-left: 20%
+  	}
+
+    .project{
+      width: 60%;
+      margin-left: 20%;
     }
+    .section{padding: 2em 25%;}
 
-    img.process{
-    	width: 90%;
-    }
 
-    #pic{
-    	width: 20%;
-
-    }
-
-    .tcr h5{
-        width: 50%;
-        margin: 2em 25%;
-    }
-
-    div#bg{
-        background: url('../images/tcr_medium.png') no-repeat;
-        background-size: 100%;
-        width: 100%;
-        height: 100%;
-    }
-
-    div#bg2{
-        background: url('../images/ft_medium.png') no-repeat;
-        background-size: 100%;
-        width: 100%;
-        height: 100%;
-    }
-
-    div#bg3{
-        background: url('../images/travel_medium.png') no-repeat;
-        background-size: 100%;
-        width: 100%;
-        height: 100%;
-    }
-
+  
 }
 
-/***** LARGE *****/
-@media only screen and (min-width: 860px) {
-	/*3 CARD LAYOUT*/
-	.float{
-	    width: 60%;
-	    height: 30%;
-	    display: flex;
-	    flex-direction: row;
-	    align-items: center;
-	    padding: 1.5em;
-	}
+@media (min-width: 600px) and (orientation: landscape){
+}
 
-	img.folio{
-	    padding: 0;
-	    margin: 0;
-	    width: 40%;
-	    height: 40%;
-	}
-
-	.info{
-	    text-align: left;
-	    padding-left: 5%;
-	}
-
-    .section{
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-    }
-
-    .section p {
-        text-align: left;
-        width: 60%;
-        margin: 0;
-        padding: 1em;
-    }
-
-	img.process{
-    	width: 60%;
-    }
-
-    #pic{
-    	width: 15%;
-    }
-
-    img.casestudy{
-        width: 60%;
-    } 
-
-    .ft h5{
-        width: 70%;
-        margin: 1.5em 15%;
-    }
-
-    .travel h5{
-        width: 50%;
-        margin: 1.5em 25%;
-    }
-
-    div#bg{
-        background: url('../images/banner.jpg') no-repeat;
-        background-size: 100%;
-        width: 100%;
-        height: 100%;
-    }
-
-    div#bg2{
-        background: url('../images/ft_large.png') no-repeat;
-        background-size: 100%;
-        width: 100%;
-        height: 100%;
-    }
-
-    div#bg3{
-        background: url('../images/travel_large.png') no-repeat;
-        background-size: 100%;
-        width: 100%;
-        height: 100%;
-    }
+*{
+    -webkit-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    transition:all 0.5s ease;
 }
