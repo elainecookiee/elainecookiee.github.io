@@ -9,10 +9,11 @@ html, body{
 	height: 100%;
 }
 
-.greyfont{ color: #d3d3d3; }
 
 a:link { color: black; text-decoration: none;}
 a:visited { color: black; }
+a.greyfont:link{ color: #d3d3d3; }
+a.greyfont:visited{ color: #d3d3d3; }
 a:hover, a.greyfont:hover{
 	opacity: 1;
 	color: #e78e8e;
