@@ -41,7 +41,8 @@ h6 { font-size: 1em; }
 }
 
 .color{
-	color: #00a99d;
+	color: #e78e8e;
+/*	color: #00a99d;*/
 }
 
 hr{
@@ -50,7 +51,7 @@ hr{
 
 .underline{
 	margin-top: 0;
-	border-top: 3px solid #00a99d;
+	border-top: 3px solid #e78e8e;
 	border-bottom: none;
 }
 
@@ -85,7 +86,7 @@ hr{
   border-bottom-right-radius: 8px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-color: #00a99d;
+  background-color: #e78e8e;
   background-image: linear-gradient(
     center bottom,
     rgb(43,194,83) 37%,
@@ -121,7 +122,7 @@ hr{
 }
 
 .circle{
-	background-color: #00a99d;
+	background-color: #e78e8e;
 	border-radius: 50%;
 	width: 15px;
 	height: 15px; 
@@ -311,7 +312,7 @@ hr{
 	}
 
 	.underline{
-		border-top: 4px solid #00a99d;
+		border-top: 4px solid #e78e8e;
 	}
 
 	p{
