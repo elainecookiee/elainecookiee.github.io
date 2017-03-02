@@ -9,23 +9,11 @@ html, body{
 	height: 100%;
 }
 
-a{
-  color: black;
-  text-decoration: none;
-}
-
-/*a:link{
-  color: black;
-  text-decoration: none;
-}*/
-
-/*a:visited{
-  color: #e78e8e;
-}*/
-
-a:hover, .active{
-	color: #e78e8e;
-}
+a:link { color: grey; text-decoration: none; }
+a:visited { color: grey; }
+a:hover { color: hotpink; }
+a:hover, a.active, a.color { color: #e78e8e; }
+a.color:hover{ text-decoration: underline }
 
 h1, h2, h3, h4, h5, h6, p{
 	line-height: 1.5;
@@ -41,13 +29,12 @@ h6 { font-size: 1em; }
 .home{ opacity: .7; }
 .home:hover{ opacity: 1; }
 
-.box{
-	position: relative;
-}
+p::-moz-selection { color: #e78e8e}
+p::selection { color: #e78e8e; }
 
-.grey p{
-	color: grey;
-}
+.box{ position: relative; }
+
+.grey p{ color: grey; }
 
 .section:nth-child(even) {
     background-color: white;
@@ -61,9 +48,26 @@ h6 { font-size: 1em; }
   text-align: center;
 }
 
+a.back-to-top {
+  display: none;
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  background: #e78e8e url("up-arrow.png") no-repeat center 43%;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
 iframe{
   margin-left: 10%;
 }
+
+
 
 /*Media Queries*/
 
@@ -76,13 +80,20 @@ iframe{
 	.navigation{
 		display: flex;
 		flex-direction: row;
-		justify-content: flex-end;
+		justify-content: center;
     margin: 5% 5% 15% 5%;
 	}
 
 	.navigation li{
 		padding: 1em;
 	}
+
+  .home-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 10% 5% 10% 5%;
+  }
 
   .absolute{
     position: absolute;
@@ -115,10 +126,16 @@ iframe{
 	  margin-top: 20%;
 	}
 
-	.card, .gallery, .casestudy{
+	.gallery, .casestudy{
 		width: 90%;
 		margin: 0 5%;
 	}
+
+  .card{
+    width: 90%;
+    height: 100%;
+    margin: 0 5%;
+  }
 
 	.box:hover .overlay{ opacity: 1; }
 
@@ -157,7 +174,12 @@ iframe{
 
   p { font-size: 1em;}
 
-  .navigation {margin: 5%;}
+  .navigation{
+    margin: 5%;
+    justify-content: flex-end;
+  }
+
+  .home-top{ margin: 5% 5% 10% 5%; }
 
 	.item h4{ text-align: center;}
 
@@ -170,50 +192,52 @@ iframe{
 /*LARGE*/
 @media (min-width: 960px) {
 
-  	.navigation{
-  		margin: 3% 10% 5% 0;
-  	}
+	.navigation{
+		margin: 3% 10% 5% 0;
+	}
 
-    .absolute{ top: 12%; left: 45%; }
+  .home-top{ margin: 5% 10% 10% 5%; }
 
-  	.overlay{
-  		left: 0;
-  		width: 100%;
-  	}
+  .absolute{ top: 12%; left: 45%; }
 
-  	.clearfix{
-  		display: flex;
-  		flex-direction: column;
-  		align-items: center;
-  		width: 80%;
-  		margin: 0 10%;
-  	}
+	.overlay{
+		left: 0;
+		width: 100%;
+	}
 
-  	.row1, .row2{
-  		display: flex;
-  		flex-direction: row;
-  		margin: 0;
-  	}
+	.clearfix{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
+		margin: 0 10%;
+	}
 
-  	.card{
-  		width: 100%;
-      height: 100%;
-  		margin: 0;
-  	}
+	.row1, .row2{
+		display: flex;
+		flex-direction: row;
+		margin: 0;
+	}
 
-  	.gallery{
-  		width: 60%;
-  		margin-left: 20%
-  	}
+	.card{
+		width: 100%;
+    height: 100%;
+		margin: 0;
+	}
 
-    .project{
-      width: 60%;
-      margin-left: 20%;
-    }
+	.gallery{
+		width: 60%;
+		margin-left: 20%
+	}
 
-    .section{ padding: 2em 25%;}
+  .project{
+    width: 60%;
+    margin-left: 20%;
+  }
 
-    #pic{ width: 20%; }
+  .section{ padding: 2em 25%;}
+
+  #pic{ width: 20%; }
 
 
   
