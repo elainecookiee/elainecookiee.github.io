@@ -11,14 +11,11 @@ html, body{
 
 .greyfont{ color: #d3d3d3; }
 
-a {
-	color: black;
-	opacity: .9;
-	text-decoration: none;
-}
-
-a:hover{
+a:link { color: black; text-decoration: none;}
+a:visited { color: black; }
+a:hover, a.greyfont:hover{
 	opacity: 1;
+	color: #e78e8e;
 	-webkit-transition:all 0.01s linear;
     -moz-transition:all 0.01s linear;
     -o-transition:all 0.01s linear;

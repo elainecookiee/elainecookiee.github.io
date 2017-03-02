@@ -11,7 +11,6 @@ html, body{
 
 a:link { color: grey; text-decoration: none; }
 a:visited { color: grey; }
-a:hover { color: hotpink; }
 a:hover, a.active, a.color { color: #e78e8e; }
 a.color:hover{ text-decoration: underline }
 
