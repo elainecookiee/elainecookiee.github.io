@@ -90,14 +90,14 @@ iframe{
   .home-top{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin: 10% 5% 10% 5%;
   }
 
   .absolute{
     position: absolute;
-    top: 10%;
-    left: 5%;
+    top: 8%;
+    right: 5%;
   }
 
 	.center{
@@ -158,10 +158,41 @@ iframe{
 
   #pic{ width: 70%; }
 
-  .bottom-nav{ text-align: center;}
+  .bottom-nav{
+  	padding: 1em;
+  	text-align: center;
+  	width: 80%;
+  }
+
+  .bottom-nav a{
+  	display: inline-block;
+  	width: 5%;
+  	color: #e78e8e;
+  	margin-left: 3em;
+  	padding-bottom: 2em;
+  }
+
+
+  #l img, #r img{
+  	width: 150%;
+  	text-align: center;
+  }
+
+  #l, #r{
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: center;
+  	height: 1.5em;
+  }
+
+  #l { float:left; }
+  #r { float:right; }
+  #l h5 { padding-left: .5em; }
+  #r h5 { padding-right: .5em; }
+
 
 	footer{
-		padding: 2em;
+		padding: 3em;
 		text-align: center;
 	}
 
@@ -195,9 +226,9 @@ iframe{
 		margin: 3% 10% 5% 0;
 	}
 
-  .home-top{ margin: 5% 10% 10% 5%; }
+  .home-top{ margin: 5% 10% 10% 20%; }
 
-  .absolute{ top: 12%; left: 45%; }
+  .absolute{ top: 12%; right: 20%; font-size: 1.728em }
 
 	.overlay{
 		left: 0;
