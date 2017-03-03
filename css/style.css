@@ -100,6 +100,8 @@ iframe{
     right: 5%;
   }
 
+  .absolute a{ color: black; }
+
 	.center{
 		display: flex;
 	  flex-direction: column;
@@ -268,6 +270,10 @@ iframe{
   .section{ padding: 2em 25%;}
 
   #pic{ width: 20%; }
+
+ .bottom-nav a{
+    margin-left: 6em;
+  }
 
 
   
