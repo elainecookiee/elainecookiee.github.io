@@ -27,6 +27,7 @@ h6 { font-size: 1em; }
 
 .home{ opacity: .7; }
 .home:hover{ opacity: 1; }
+.name { color: black; }
 
 p::-moz-selection { color: #e78e8e}
 p::selection { color: #e78e8e; }
