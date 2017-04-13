@@ -7,7 +7,7 @@
 <body>
     <nav>
         <ul class="navigation">
-        <li><a href="index.php">HOME</a></li>
+        <li><a href="index.html">HOME</a></li>
         <li><a class="active" href="#">PROCESS</a></li>
         <li><a href="about.php">ABOUT</a></li>
         <li><a href="resume.html" target="_blank">RESUME</a></li>

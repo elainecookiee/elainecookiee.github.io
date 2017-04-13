@@ -7,11 +7,11 @@
 <body>
     <nav>
         <ul class="home-top">
-            <li><a href="index.php"><img class="home" src="images/icon-home.png" width="90%" alt="homepage"/></a></li>
+            <li><a href="index.html"><img class="home" src="images/icon-home.png" width="90%" alt="homepage"/></a></li>
         </ul>
     </nav>
 
-    <h4 class="absolute"><a href="index.php">Elaine's Projects</a></h4>
+    <h4 class="absolute"><a href="index.html">Elaine's Projects</a></h4>
 
 <!--CASE STUDY -->
 
