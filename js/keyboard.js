@@ -12,6 +12,7 @@ $(document).ready(function() {
     {
         switch(e.which)
         {
+            // left
             case 37:
             console.log("left");
             var next = $('.active').prev().attr('href');
@@ -30,6 +31,7 @@ $(document).ready(function() {
                 // showViaKeydown(next);
                 break;
 
+            // right
             case 39:
             console.log("right");
                 // var next = $('.active').next().attr('href');

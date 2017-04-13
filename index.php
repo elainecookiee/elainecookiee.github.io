@@ -1,45 +1,8 @@
-<!doctype html>
-<!-- html5.js for IE less than 9 --> <!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
-<!-- css3-mediaqueries.js for IE less than 9 -->
-<!--[if lt IE 9]>
-<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3- mediaqueries.js"></script>
-<![endif]-->
+<?php session_start();?>
 
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<link rel="stylesheet" ype="text/css" href="css/reset.css"/>
-<link rel="stylesheet" ype="text/css" href="css/style.css"/>
-
-<title>Elaine Tran -UX/UI Portfolio</title>
-
-<link rel="shortcut icon" href="images/profile.png" />
-
-<!-- for Google -->
-<meta name="description" content="Elaine Tran's Responsive Resume" />
-<meta name="keywords" content=“Mobile, User Experience, User Interface, Design, Developer, Technology" />    
-<meta name="author" content=“Elaine Tran" />
-<link rel="author" href="https://plus.google.com/u/1/+ElaineTran1/">
-<meta name="copyright" content="Content by Elaine Tran 2017" />
-
-<!-- for Facebook -->          
-<meta property="og:title" content=“Elaine Tran" />
-<meta property="og:url" content="http://elainetran.me/resume.html" />
-<meta property="og:type" content="website" />
-<meta property="og:description" content=“UX/UI Designer" />
-<meta property="og:image" content="images/profile.png" />
-
-<!-- for Twitter -->          
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Elaine Tran- UX/UI Designer Resume" />
-<meta name="twitter:description" content="UX/UI Designer | Front-End Dev // Post-grad @SheridanIMM | Psych @UWaterloo // Looking for New Opportunities" />
-<meta name="twitter:url" content="http://elainetran.me/resume.html" />
-<meta name="twitter:image" content="images/profile.png" /> 
-
-</head>
+<?php
+    include('include/header.php');
+?>
 
 <body>
 
@@ -54,9 +17,9 @@
 
 	<nav>
         <ul class="navigation">
-        <li><a class="active" href="#home">HOME</a></li>
-        <li><a href="process.html">PROCESS</a></li>
-        <li><a href="about.html">ABOUT</a></li>
+        <li><a class="active" href="#">HOME</a></li>
+        <li><a href="process.php">PROCESS</a></li>
+        <li><a href="about.php">ABOUT</a></li>
         <li><a href="resume.html" target="_blank">RESUME</a></li>
         </ul>
     </nav>
@@ -72,7 +35,7 @@
 	    	<div class="row1">
 	    	<div class="box">
 	    		<img class="card" src="images/teamcat.png" alt="Team Cat Rescue project"/>
-	    		<a href="tcr.html">
+	    		<a href="tcr.php">
     		  	<div class="overlay">
 			   	  <div class="text">
 			   	  	<h5><strong>Team Cat Rescue</strong></h5>
@@ -83,7 +46,7 @@
 	    	</div>
 	    	<div class="box">
 	    		<img class="card" src="images/yweets.png" alt="Yweets API Mashup project"/>
-	    		<a href="yweets.html">
+	    		<a href="yweets.php">
 	    		<div class="overlay">
 			   	  <div class="text">
 			   	  	<h5><strong>Yweets API Mashup</strong></h5>
@@ -94,7 +57,7 @@
 	    	</div>
 	    	<div class="box">
 	    		<img class="card" src="images/boarding.png" alt="Prototype App Demo"/>
-	    		<a href="boarding.html">
+	    		<a href="boarding.php">
 	    		<div class="overlay">
 			   	  <div class="text">
 			   	  	<h5><strong>Travel App Mobile Demo</strong></h5>
@@ -107,7 +70,7 @@
     	<div class="row2">
 	    	<div class="box">
 	    		<img class="card" src="images/fruitails.png" alt="Fruitails Interactive Mat Game"/>
-	    		<a href="fruitails.html">
+	    		<a href="fruitails.php">
 	    		<div class="overlay">
 			   	  <div class="text">
 			   	  	<h5><strong>Fruitails Interactive Mat Game</strong></h5>
@@ -118,7 +81,7 @@
 	    	</div>
 	    	<div class="box">
 	    		<img class="card" src="images/foodCuisine.jpg" alt="Food Cuisine Interactive Data Viz"/>
-	    		<a href="foodcuisine.html">
+	    		<a href="foodcuisine.php">
 	    		<div class="overlay">
 			   	  <div class="text">
 			   	  	<h5><strong>Food Cuisine Interactive Data Viz</strong></h5>
@@ -130,7 +93,7 @@
 	    	<div class="box">
 	    		<img class="card" src="images/travel.png" alt="Personal Travel Inspiration site"/></a>
 	    		<div class="overlay">
-	    		<a href="travel.html">
+	    		<a href="travel.php">
 			   	  <div class="text">
 			   	  	<h5><strong>My Travel Inspo Website</strong></h5>
 			   	  	<p>HTML/CSS, JavaScript, PHP, Adobe Ilustrator</p>
@@ -142,9 +105,10 @@
 	</div>
     </section>
 
-    <footer>
-    	<p>2017 | Elaine Tran</p>
-    </footer>
+<?php
+    include('include/footer.php');
+?>
+
 	
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
