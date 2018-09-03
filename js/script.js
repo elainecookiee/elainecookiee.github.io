@@ -14,3 +14,13 @@ $('a.back-to-top, a.back-to-top-link').click(function() {
 	}, 700);
 	return false;
 });
+
+$('#hamburger').click(function() {
+	$('.menu').toggleClass('close'); //closing hamburger animation
+	$('#menu').toggle().addClass('overlay');
+	$('#nav-top').toggleClass('fixed-top');
+});
+
+$('#hamburger li a').click(function(){
+	$('#menu').fadeOut();
+});
