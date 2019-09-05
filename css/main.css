@@ -14,7 +14,7 @@ html, body{
 }
 
 h1, h2, h3, h4, h5, h6, p{
-  line-height: 2;
+  line-height: 1.8;
 }
 
 h1 { font-size: 2.4888em; }
@@ -28,38 +28,55 @@ h6 { font-size: 1em; }
 
 /*Fonts --------------------------------------------------------------*/
 body {
+  color: #666666;
   font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 2;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.7;
   letter-spacing: .02em;
 }
 
-.header {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
+h4 {
+  margin-top: 2em;
 }
 
-.primary {
+.header {
+  color: #4A4A4A;
+  font-family: 'Montserrat', sans-serif;
+/*  font-family: 'Montserrat', sans-serif;*/
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.primary, .case-study-title {
   font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-size: 1.15em;
+  font-weight: 700;
   color: #333;
+}
+
+.case-study-title{
+  font-size: 1.25em;
 }
 
 .secondary {
   font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  color: #999;
+  font-weight: 400;
+  color: #666;
 }
 
 .caption {
-  font-style: italic;
+  font-size: 80%;
   text-align: center;
 }
 
 .underline {
   border-bottom: 1px solid #E78E8E;
   padding-bottom: 2px;
+}
+
+strong {
+  color: #4A4A4A;
 }
 
 a.underline:hover {
@@ -82,6 +99,20 @@ a:hover {
   color: #E78E8E;
 }
 
+ol {
+  margin-left: 2em;
+  margin-top: 1em;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 5%;
+}
+
+ul li, ol li {
+  padding: 0.5em 0.25em;
+  width: 90%;
+}
 
 /*Resume styling --------------------------------------------------------------*/
 
@@ -187,7 +218,7 @@ a:hover {
   color: black;
   font-family: 'Montserrat', sans-serif;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .1em solid pink; /* The typwriter cursor */
+  border-right: .1em solid #E78E8E; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .02em; /* Adjust as needed */
@@ -243,6 +274,30 @@ a.back-to-top {
 
 .box-shadow:hover {
     box-shadow: 0px 16px 22px 2px rgba(51,51,51,0.2);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.coming-soon {
+    display: visible;
+    background: white;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    transition: opacity .5s;
+  }
+
+.coming-soon:hover{
+  opacity: 0.9;
+}
+
+.coming-soon-text{
+  text-align: center;
+  padding-top: 30%;
+  font-size: 1.5em;
 }
 
 .hover-up {
@@ -257,11 +312,11 @@ a.back-to-top {
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.outer-box {
+/*.outer-box {
     padding: 15px;
 }
-
-.box-shadow:hover .overlay {
+*/
+.box-shadow:hover .overlay{
     opacity: 1;
 }
 
@@ -277,6 +332,8 @@ a.back-to-top {
   display: flex;
   justify-content: center;
   padding: 1em;
+  font-weight: 400;
+  color: #333;
 }
 
 
@@ -295,14 +352,31 @@ img.card{
   margin: auto;
   width: 100%;
   margin-bottom: 2em;
+  display:block;
+  position: relative;
 }
 
 .description{
-   padding: 1em;
+   padding: 1em 2.5em;
 }
 
-.process{
-  margin-top: 2em;
+.casestudy-tag, .casestudy-cta{
+  display: inline-block;
+  margin-bottom: 0.5em;
+  margin-left: 0.15em;
+  padding: 6px 16px;
+  border-radius: 5px;
+  background-color: #ededed;
+  font-weight: 500;
+}
+
+.casestudy-tag:nth-child(2){
+  margin-left: 0.25em;
+}
+
+.casestudy-cta{
+  background-color: #E78E8E;
+  color: white;
 }
 
 .item{
@@ -315,13 +389,13 @@ img.card{
   margin-top: 2em;
 }
 
-.process-image{
+.process-image, .about-me{
   width: 90%;
   margin: 0 auto;
 }
 
 iframe{
-  margin-left: 10%;
+  margin-left: 25%;
 }
 
 /*Case study styling*/
@@ -339,7 +413,7 @@ iframe{
 
 .responsive-banner{
   width:100%;
-  height: 350px;
+  height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -353,8 +427,20 @@ iframe{
  background-image: url(../images/teamcat/banner.png);
 }
 
+.responsive-banner-travelapp{
+  background-image: url(../images/travel-app/banner.png);
+}
+
 .responsive-banner-fruitails{
   background-image: url(../images/fruitails/banner.png);
+}
+
+.responsive-banner-ds{
+  background-image: url(../images/DS/banner.png);
+}
+
+.responsive-banner-brandkit{
+  background-image: url(../images/brandkit/banner2.png);
 }
 
 .section{
@@ -364,6 +450,7 @@ iframe{
 
 .section img{
   width: 100%;
+  margin-top: 1.5em;
 }
 
 .content{
@@ -378,7 +465,7 @@ iframe{
 .about-content p {
   width: 90%;
   margin: 0 auto;
-  padding: 1em;
+  padding: 0.5em;
   text-align: left;
 }
 
@@ -390,15 +477,15 @@ iframe{
   }
 
   .typewriter h1{
-    font-size: 1.75em;
-    color: #666666;
+    font-weight: 700;
+    font-size: 1.6em;
+    color: #333;
   }
 
   .typewriter {
-    width: 30em;
+    width: 28em;
     margin: 0 auto;
   }
-}
 
 
 @media (min-width: 960px) {
@@ -458,7 +545,7 @@ iframe{
   }
 
   .row1, .row2 {
-    margin: 1em;
+    margin: 1.5em;
     width: 40%;
     display: inline-block;
     box-shadow: 0 10px 22px rgba(0,0,0,.08);
@@ -466,7 +553,7 @@ iframe{
   }
 
   .process-image{
-    width: 60%;
+    width: 50%;
   }
 
   .section{
@@ -495,8 +582,8 @@ iframe{
 /*  Typewritter*/
 
   .typewriter h1 {
-    font-size: 2em;
-    color: #666666;
+    font-size: 2.15em;
+    color: #333;
     letter-spacing: .02em; /* Adjust as needed */
     animation: 
       typing 3s steps(60, end),
@@ -525,7 +612,7 @@ iframe{
 .footer {
     text-align: center;
     margin-top: 5em;
-    padding: 5em 0;
+    padding: 5em 2em;
     background-color: #f7f7f7;
 }
 
