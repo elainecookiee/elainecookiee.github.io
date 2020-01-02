@@ -602,8 +602,7 @@ iframe{
 
 /*Footer --------------------------------------------------------------*/
 .blog {
-  margin-top: 5%;
-  margin-left: 12%;
+  margin: 0 auto;
   max-width: 80%;
 }
 
