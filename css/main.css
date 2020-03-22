@@ -29,7 +29,7 @@ h6 { font-size: 1em; }
 /*Fonts --------------------------------------------------------------*/
 body {
   color: #666666;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 1.7;
@@ -40,27 +40,35 @@ h4 {
   margin-top: 2em;
 }
 
+h1 {
+    font-size: 2em;
+    color: #424242;
+    font-weight: 700;
+  }
+
 .header {
   color: #4A4A4A;
-  font-family: 'Montserrat', sans-serif;
-/*  font-family: 'Montserrat', sans-serif;*/
+  font-family: 'Poppins', sans-serif;
   font-size: 30px;
   font-weight: 700;
+  letter-spacing: 0.025em;
 }
 
 .primary, .case-study-title {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.15em;
   font-weight: 700;
-  color: #333;
+  color: #424242;
+  letter-spacing: 0.025em;
 }
 
 .case-study-title{
   font-size: 1.25em;
+  letter-spacing: 0.025em;
 }
 
 .secondary {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #666;
 }
@@ -108,11 +116,6 @@ ol {
 ul {
   list-style-type: square;
   margin-left: 5%;
-}
-
-ul li, ol li {
-  padding: 0.5em 0.25em;
-  width: 90%;
 }
 
 /*Resume styling --------------------------------------------------------------*/
@@ -214,14 +217,14 @@ ul li, ol li {
 
 /*Effects --------------------------------------------------------------*/
 
-.typewriter h1 {
-  font-size: 1.3em;
+/*.typewriter h1 {
+  font-size: 50px;
   color: black;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .1em solid #E78E8E; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  margin: 0 auto;  Gives that scrolling effect as the typing happens 
   letter-spacing: .02em; /* Adjust as needed */
   animation: 
     typing 2s steps(60, end),
@@ -238,12 +241,7 @@ ul li, ol li {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: pink }
-}
-
-.typewriter {
-  width: 22em;
-  margin: 1em 0;
-}
+}*/
 
 a.back-to-top {
   display: none;
@@ -335,7 +333,7 @@ a.back-to-top {
   justify-content: center;
   padding: 1em;
   font-weight: 400;
-  color: #333;
+  color: #424242;
 }
 
 
@@ -355,12 +353,13 @@ img.card{
   margin: auto;
   width: 100%;
   margin-bottom: 2em;
+  border-radius: 16px;
   display:block;
   position: relative;
 }
 
 .description{
-   padding: 1em 2.5em;
+   padding: 1em 1.5em;
 }
 
 .casestudy-tag, .casestudy-cta{
@@ -479,6 +478,12 @@ iframe{
     width: 15%;
   }
 
+  h1 {
+    font-size: 3em;
+  }
+
+
+/*
   .typewriter h1{
     font-weight: 700;
     font-size: 1.6em;
@@ -487,6 +492,10 @@ iframe{
 
   .typewriter {
     width: 28em;
+    margin: 0 auto;
+  }*/
+
+  .footer {
     margin: 0 auto;
   }
 
@@ -585,29 +594,22 @@ iframe{
 
 /*  Typewritter*/
 
-  .typewriter h1 {
-    font-size: 2.15em;
-    color: #333;
+/*  .typewriter h1 {
+    font-size: 50px;
+    color: #424242;
     letter-spacing: .02em; /* Adjust as needed */
     animation: 
-      typing 3s steps(60, end),
+      typing 3s steps(0, end),
       blink-caret .5s step-end infinite;
   }
 
   .typewriter {
-    width: 35em;
+    width: 25em;
     margin: 0 auto;
-  }
+  }*/
 }
 
 @media (min-width: 600px) and (orientation: landscape){
-}
-
-
-/*Footer --------------------------------------------------------------*/
-.blog {
-  margin: 0 auto;
-  max-width: 80%;
 }
 
 /*Footer --------------------------------------------------------------*/
@@ -617,6 +619,17 @@ iframe{
     margin-top: 5em;
     padding: 5em 2em;
     background-color: #f7f7f7;
+}
+
+.footer li {
+  display: inline-block;
+  padding: 0;
+  opacity: 0.4;
+}
+
+#current-project-footer {
+  opacity: 1;
+  font-weight: 700;
 }
 
 /*Loading Screen--------------------------------------------------------------*/
