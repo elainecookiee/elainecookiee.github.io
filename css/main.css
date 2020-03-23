@@ -29,7 +29,7 @@ h6 { font-size: 1em; }
 /*Fonts --------------------------------------------------------------*/
 body {
   color: #666666;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 1.7;
@@ -117,6 +117,67 @@ ul {
   list-style-type: square;
   margin-left: 5%;
 }
+
+.highlight{
+  color: #424242;
+  background-color: rgba(231,142,142, 0.5);
+}
+
+/*Animation --------------------------------------------------------------*/
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+ @-webkit-keyframes fadeInUp {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+         
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%,0);}
+    100% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0,0,0);}
+}
+
+
+.fadeInUp{
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+
+
+
+ @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+         
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+.fadeIn{
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+
+.hideme{
+  opacity: 0.6;
+}
+
+
 
 /*Resume styling --------------------------------------------------------------*/
 
@@ -498,7 +559,6 @@ iframe{
   .footer {
     margin: 0 auto;
   }
-
 
 @media (min-width: 960px) {
 
