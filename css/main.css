@@ -177,7 +177,18 @@ ul {
   opacity: 0.6;
 }
 
+.row1, .row2 {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+.row1:hover {
+  top: -10px;
+}
 
+.row2:hover {
+  top: -10px;
+}
 
 /*Resume styling --------------------------------------------------------------*/
 
