@@ -103,6 +103,14 @@ a:hover {
   transition: color 0.3s ease;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:100;
+  background-color: white;
+}
+
 #menu li.active{
   color: #E78E8E;
   font-weight: 700;
@@ -172,23 +180,12 @@ ul {
   animation-name: fadeIn;
 }
 
-
-.hideme{
-  opacity: 0.6;
-}
-
 .row1, .row2 {
   position: relative;
   top: 0;
   transition: top ease 0.5s;
 }
-.row1:hover {
-  top: -10px;
-}
-
-.row2:hover {
-  top: -10px;
-}
+.row1:hover, .row2:hover {top: -12px;}
 
 /*Resume styling --------------------------------------------------------------*/
 
@@ -244,34 +241,19 @@ ul {
 
 .line {
   position: absolute;
-  height: 3px;
+  height: 5px;
   width:100%;
-  background: black;
+  background: #666;
   border-radius:10px;
   transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.25s;
 }
 
-.line01 {
-  top:19%;
-}
+.line01 {top:19%;}
+.line02 {top:49%;}
+.line03 {top:79%;}
 
-.line02 {
-  top:49%;
-}
-
-.line03 {
-  top:79%;
-}
-
-.menu.close .line01 {
-  transform:rotate(45deg);
-  top:49%;
-}
-
-.menu.close .line02, .menu.close .line03 {
-  transform:rotate(-45deg);
-  top:49%;
-}
+.menu.close .line01 {transform:rotate(45deg); top:49%;}
+.menu.close .line02, .menu.close .line03 {transform:rotate(-45deg); top:49%;}
 
 .social-media-icon{
   padding: 1em 0.5em;
@@ -289,46 +271,6 @@ ul {
 
 /*Effects --------------------------------------------------------------*/
 
-/*.typewriter h1 {
-  font-size: 50px;
-  color: black;
-  font-family: 'Poppins', sans-serif;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .1em solid #E78E8E; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto;  Gives that scrolling effect as the typing happens 
-  letter-spacing: .02em; /* Adjust as needed */
-  animation: 
-    typing 2s steps(60, end),
-    blink-caret .5s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: pink }
-}*/
-
-a.back-to-top {
-  display: none;
-  width: 60px;
-  height: 60px;
-  text-indent: -9999px;
-  position: fixed;
-  z-index: 999;
-  right: 20px;
-  bottom: 20px;
-  background: #e78e8e url("up-arrow.png") no-repeat center 43%;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-}
 
 
 /*Projects --------------------------------------------------------------*/
