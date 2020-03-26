@@ -1,10 +1,3 @@
-/**{
-    -webkit-transition:all 0.5s ease;
-    -moz-transition:all 0.5s ease;
-    -o-transition:all 0.5s ease;
-    transition:all 0.5s ease;
-}*/
-
 /*General --------------------------------------------------------------*/
 
 html, body{
@@ -13,17 +6,14 @@ html, body{
 	height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, p{
-  line-height: 1.8;
-}
+h1, h2, h3, h4, h5, p {line-height: 1.8;}
 
-h1 { font-size: 2.4888em; }
-h2 { font-size: 2.074em; }
-h3 { font-size: 1.728em; }
-h4 { font-size: 1.44em }
-h5 { font-size: 1.2em; }
-h6 { font-size: 1em; }
-
+h1 { font-size: 2.074em; color: #424242; font-weight: 700;}
+h2 { font-size: 1.728em; }
+h3 { font-size: 1.44em; }
+h4 { font-size: 1.2em }
+h5 { font-size: 1em; }
+p { font-size: 1em; }
 
 
 /*Fonts --------------------------------------------------------------*/
@@ -31,20 +21,13 @@ body {
   color: #666666;
   font-family: 'Poppins', 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 17px;
   line-height: 1.7;
-  letter-spacing: .02em;
+  letter-spacing: .025em;
 }
 
 h4 {
   margin-top: 2em;
 }
-
-h1 {
-    font-size: 2em;
-    color: #424242;
-    font-weight: 700;
-  }
 
 .header {
   color: #4A4A4A;
@@ -83,10 +66,6 @@ h1 {
   padding-bottom: 2px;
 }
 
-strong {
-  color: #4A4A4A;
-}
-
 a.underline:hover {
   color: #E78E8E!important;
 }
@@ -101,14 +80,6 @@ a {
 a:hover {
   color: #E78E8E;
   transition: color 0.3s ease;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index:100;
-  background-color: white;
 }
 
 #menu li.active{
@@ -161,9 +132,6 @@ ul {
   animation-name: fadeInUp;
 }
 
-
-
-
  @-webkit-keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
@@ -180,17 +148,28 @@ ul {
   animation-name: fadeIn;
 }
 
-.row1, .row2 {
+/*Navigation --------------------------------------------------------------*/
+
+#elaine-logo{
   position: relative;
-  top: 0;
-  transition: top ease 0.5s;
+  width: 20%;
+  padding: 1.5em;
+  z-index: 9999;
 }
-.row1:hover, .row2:hover {top: -12px;}
 
-/*Resume styling --------------------------------------------------------------*/
+#menu li {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  font-weight: 400;
+  color: #424242;
+}
 
-.resume-category{
-  margin: 0 10%;
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6em 2em;
 }
 
 /*Hamburger Menu --------------------------------------------------------------*/
@@ -269,13 +248,45 @@ ul {
   font-size: 1.75em !important;
 }
 
-/*Effects --------------------------------------------------------------*/
 
+/*Project Cards --------------------------------------------------------------*/
 
+.project-container {padding: 20px;}
 
-/*Projects --------------------------------------------------------------*/
-.project-box {
-    padding: 20px;
+img.card{
+  width: 100%;
+  border-radius:16px 16px 0 0;
+}
+
+.card-style {
+  margin: auto;
+  width: 100%;
+  margin-bottom: 2em;
+  border-radius: 16px;
+  display:block;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.card-style:hover {top: -12px;}
+
+.description{
+   padding: 1em 1.5em;
+}
+
+.casestudy-tag, .casestudy-cta{
+  display: inline-block;
+  margin-bottom: 0.5em;
+  margin-left: 0.15em;
+  padding: 4px 14px;
+  border-radius: 5px;
+  background-color: #ededed;
+  font-weight: 500;
+}
+
+.casestudy-tag:nth-child(2){
+  margin-left: 0.25em;
 }
 
 .box-shadow {
@@ -287,6 +298,18 @@ ul {
 
 .box-shadow:hover {
     box-shadow: 0px 16px 22px 2px rgba(51,51,51,0.2);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.hover-up {
+    top: 0px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.hover-up:hover {
+    top: -20px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -314,118 +337,14 @@ ul {
   font-size: 1.5em;
 }
 
-.hover-up {
-    top: 0px;
-    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
+/*Individual Case Studies --------------------------------------------------------------*/
 
-.hover-up:hover {
-    top: -20px;
-    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-/*.outer-box {
-    padding: 15px;
-}
-*/
-.box-shadow:hover .overlay{
-    opacity: 1;
-}
-
-#elaine-logo{
-  position: relative;
-  width: 25%;
-  padding: 1.5em;
-  z-index: 9999;
-}
-
-
-#menu li {
-  display: flex;
-  justify-content: center;
-  padding: 1em;
-  font-weight: 400;
-  color: #424242;
-}
-
-
-.intro{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 6em 2em;
-}
-
-img.card{
-  width: 100%;
-  border-radius:16px 16px 0 0;
-}
-
-.row1, .row2{
-  margin: auto;
-  width: 100%;
-  margin-bottom: 2em;
-  border-radius: 16px;
-  display:block;
-  position: relative;
-}
-
-.description{
-   padding: 1em 1.5em;
-}
-
-.casestudy-tag, .casestudy-cta{
-  display: inline-block;
-  margin-bottom: 0.5em;
-  margin-left: 0.15em;
-  padding: 4px 14px;
-  border-radius: 5px;
-  background-color: #ededed;
-  font-weight: 500;
-}
-
-.casestudy-tag:nth-child(2){
-  margin-left: 0.25em;
-}
-
-.casestudy-cta{
-  background-color: #E78E8E;
-  color: white;
-}
-
-.item{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.process div{
-  margin-top: 2em;
-}
-
-.process-image, .about-me{
-  width: 90%;
-  margin: 0 auto;
-}
-
-iframe{
-  margin-left: 25%;
-}
-
-/*Case study styling*/
-
-.back-arrow{
-  position: absolute;
-  top: 1.5em;
-  left: 1.5em;
-  width: 50%;
-}
-
-.back-arrow:hover{
-  color: #666666;
-}
+.responsive-banner-travel {background-image: url(../images/travel-inspo/banner.png);}
+.responsive-banner-cat {background-image: url(../images/teamcat/banner.png);}
+.responsive-banner-travelapp {background-image: url(../images/travel-app/banner.png);}
+.responsive-banner-fruitails {background-image: url(../images/fruitails/banner.png);}
+.responsive-banner-ds {background-image: url(../images/DS/banner.png);}
+.responsive-banner-brandkit {background-image: url(../images/brandkit/banner2.png);}
 
 .responsive-banner{
   width:100%;
@@ -435,29 +354,21 @@ iframe{
   background-position: center;
 }
 
-.responsive-banner-travel{
-  background-image: url(../images/travel-inspo/banner.png);
+.casestudy-cta{
+  background-color: #E78E8E;
+  color: white;
 }
 
-.responsive-banner-cat{
- background-image: url(../images/teamcat/banner.png);
+.back-arrow{
+  position: absolute;
+  top: 1.5em;
+  left: 1.5em;
+  width: 50%;
 }
 
-.responsive-banner-travelapp{
-  background-image: url(../images/travel-app/banner.png);
-}
+.back-arrow:hover {opacity:0.7;}
 
-.responsive-banner-fruitails{
-  background-image: url(../images/fruitails/banner.png);
-}
-
-.responsive-banner-ds{
-  background-image: url(../images/DS/banner.png);
-}
-
-.responsive-banner-brandkit{
-  background-image: url(../images/brandkit/banner2.png);
-}
+iframe {margin-left: 25%;}
 
 .section{
   padding: 1em;
@@ -473,46 +384,35 @@ iframe{
   margin-bottom: 2em;
 }
 
-.about-picture{
-  width: 90%;
-  margin: 0 auto;
-}
+/*About Me --------------------------------------------------------------*/
 
-.about-content p {
-  width: 90%;
+.about-me {
+  width: 85%;
+  padding-top: 1.5em;
   margin: 0 auto;
-  padding: 0.5em;
   text-align: left;
 }
 
+.about-picture {width: 100%;}
+
+
 
 /*Media Queries --------------------------------------------------------------*/
-@media (min-width: 500px) {
-  #elaine-logo{
-    width: 15%;
-  }
 
-  h1 {
-    font-size: 3em;
-  }
+/*Small*/
+@media (min-width: 600px) {
 
+  #elaine-logo{ width: 15%; }
 
-/*
-  .typewriter h1{
-    font-weight: 700;
-    font-size: 1.6em;
-    color: #333;
-  }
+  h1 {font-size: 3em;}
+}
 
-  .typewriter {
-    width: 28em;
-    margin: 0 auto;
-  }*/
+/*Medium*/
+@media (min-width: 760px) {
 
-  .footer {
-    margin: 0 auto;
-  }
+}
 
+/*Large*/
 @media (min-width: 960px) {
 
   #hamburger{
@@ -549,12 +449,12 @@ iframe{
   .intro{
     text-align: center;
     background-color: white;
-    padding: 12em 15em 16em;
+    padding: 12em 10em 16em;
     max-width: 1000px;
     margin: 0 auto;
   }
 
-  .project-box{
+  .project-container{
     max-width: 1500px;
     margin: 0 auto;
   }
@@ -564,22 +464,16 @@ iframe{
     box-shadow: none;
   }
 
-  .project-center{
+  .project-row{
     display: flex;
     justify-content: center;
   }
 
-  .row1, .row2 {
+  .card-style {
     margin: 1.2em;
     border-radius: 16px;
     width: 35%;
     display: inline-block;
-    box-shadow: 0 10px 22px rgba(0,0,0,.09);
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  }
-
-  .process-image{
-    width: 50%;
   }
 
   .section{
@@ -590,36 +484,25 @@ iframe{
     width: 100%;
   }
 
-  .process{
-    margin-top: 10em;
+  .about-me{
+    width: 50%;
+    margin-top: 10%;
   }
 
-  .about-content{
-    width: 65%;
-    padding: 0;
-    margin: 0 auto;
-  }
+  .about-me h2 {text-align: center;}
 
   .about-picture{
+    width: 70%;
+    margin: 0 15%;
+  }
+}
+
+/*X-Large*/
+@media (min-width: 1024px) {
+  .about-me{
     width: 60%;
   }
 
-
-/*  Typewritter*/
-
-/*  .typewriter h1 {
-    font-size: 50px;
-    color: #424242;
-    letter-spacing: .02em; /* Adjust as needed */
-    animation: 
-      typing 3s steps(0, end),
-      blink-caret .5s step-end infinite;
-  }
-
-  .typewriter {
-    width: 25em;
-    margin: 0 auto;
-  }*/
 }
 
 @media (min-width: 600px) and (orientation: landscape){
