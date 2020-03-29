@@ -22,7 +22,7 @@ body {
   font-family: 'Poppins', 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  letter-spacing: .025em;
+  letter-spacing: .02em;
 }
 
 h4 {
@@ -34,20 +34,19 @@ h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 30px;
   font-weight: 700;
-  letter-spacing: 0.025em;
+  letter-spacing: 0;
 }
 
 .primary, .case-study-title {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.15em;
+  font-size: 1em;
   font-weight: 700;
   color: #424242;
   letter-spacing: 0.025em;
 }
 
 .case-study-title{
-  font-size: 1.25em;
-  letter-spacing: 0.025em;
+  font-size: 1.2em;
 }
 
 .secondary {
@@ -126,7 +125,6 @@ ul {
       transform: translate3d(0,0,0);}
 }
 
-
 .fadeInUp{
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
@@ -141,7 +139,6 @@ ul {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
-
 
 .fadeIn{
   -webkit-animation-name: fadeIn;
@@ -166,10 +163,8 @@ ul {
 }
 
 .intro{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 6em 2em;
+  padding: 10%;
+  width: 80%;
 }
 
 /*Hamburger Menu --------------------------------------------------------------*/
@@ -251,7 +246,11 @@ ul {
 
 /*Project Cards --------------------------------------------------------------*/
 
-.project-container {padding: 20px;}
+.project-container {
+  padding: 20px;
+  width: 80%;
+  margin: auto; 
+}
 
 img.card{
   width: 100%;
@@ -259,11 +258,10 @@ img.card{
 }
 
 .card-style {
-  margin: auto;
   width: 100%;
   margin-bottom: 2em;
   border-radius: 16px;
-  display:block;
+  display: inline-block;
   position: relative;
   top: 0;
   transition: top ease 0.5s;
@@ -279,7 +277,7 @@ img.card{
   display: inline-block;
   margin-bottom: 0.5em;
   margin-left: 0.15em;
-  padding: 4px 14px;
+  padding: 0.2em 0.5em;
   border-radius: 5px;
   background-color: #ededed;
   font-weight: 500;
@@ -290,14 +288,14 @@ img.card{
 }
 
 .box-shadow {
-    box-shadow: 0 10px 22px rgba(0,0,0,.08);
+    box-shadow: 0 20px 32px rgba(0,0,0,.09);
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     padding: 0px!important;
 }
 
 .box-shadow:hover {
-    box-shadow: 0px 16px 22px 2px rgba(51,51,51,0.2);
+    box-shadow: 0px 20px 32px 2px rgba(51,51,51,0.2);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -313,7 +311,7 @@ img.card{
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.coming-soon {
+.work-in-progress {
     display: visible;
     background: white;
     opacity: 0;
@@ -327,11 +325,11 @@ img.card{
     border-radius: 16px;
   }
 
-.coming-soon:hover{
+.work-in-progress:hover{
   opacity: 0.9;
 }
 
-.coming-soon-text{
+.work-in-progress-text{
   text-align: center;
   padding-top: 30%;
   font-size: 1.5em;
@@ -393,27 +391,26 @@ iframe {margin-left: 25%;}
   text-align: left;
 }
 
+.about-me p {
+  padding-top: 0.75em;
+}
 .about-picture {width: 100%;}
-
 
 
 /*Media Queries --------------------------------------------------------------*/
 
-/*Small*/
+/*Small - Hamburger and 1 project*/
 @media (min-width: 600px) {
 
   #elaine-logo{ width: 15%; }
 
-  h1 {font-size: 3em;}
+  h1 {font-size: 2.5em;}
+
+  .project-container {width:60%;}
 }
 
-/*Medium*/
+/*Medium - Show Nav and 2 projects*/
 @media (min-width: 760px) {
-
-}
-
-/*Large*/
-@media (min-width: 960px) {
 
   #hamburger{
     display: none;
@@ -449,14 +446,9 @@ iframe {margin-left: 25%;}
   .intro{
     text-align: center;
     background-color: white;
-    padding: 12em 10em 16em;
-    max-width: 1000px;
+    padding: 14em 0;
     margin: 0 auto;
-  }
-
-  .project-container{
-    max-width: 1500px;
-    margin: 0 auto;
+    width: 60%;
   }
 
   img.card{
@@ -464,37 +456,48 @@ iframe {margin-left: 25%;}
     box-shadow: none;
   }
 
-  .project-row{
-    display: flex;
-    justify-content: center;
+  .project-container {width:90%;}
+
+  .card-style {
+    margin: 2.2%;
+    width: 45%;
+  }
+
+  .section{ width: 60%;}
+
+  .about-me h2 {font-size: 1.75em;}
+  .about-me {width: 70%; margin-top: 8em;}
+  .about-picture {width: 80%; margin: 0 10%;;}
+}
+
+/*Large - Desktop size 2 project*/
+@media (min-width: 960px) {
+
+  h1 {font-size: 3em;}
+
+  #elaine-logo{
+    width: 8%;
+    top: 2.5em;
+    left: 6em;
+  }
+
+  .project-container{
+    max-width: 1500px;
+    width: 70%;
+    margin: 0 auto;
   }
 
   .card-style {
-    margin: 1.2em;
-    border-radius: 16px;
-    width: 35%;
-    display: inline-block;
+    margin: 1.66%;
   }
 
   .section{
     width: 50%;
   }
 
-  .section img{
-    width: 100%;
-  }
-
-  .about-me{
-    width: 50%;
-    margin-top: 10%;
-  }
-
-  .about-me h2 {text-align: center;}
-
-  .about-picture{
-    width: 70%;
-    margin: 0 15%;
-  }
+  .about-me h2 {text-align: center; font-size: 2.2em;}
+  .about-me{margin-top: 10em;}
+  .about-picture{width: 60%; margin: 0 20%;}
 }
 
 /*X-Large*/
@@ -523,7 +526,7 @@ iframe {margin-left: 25%;}
   opacity: 0.4;
 }
 
-#current-project-footer {
+#footer-active {
   opacity: 1;
   font-weight: 700;
 }

@@ -19,13 +19,24 @@ $('a.back-to-top, a.back-to-top-link').click(function() {
 $('#hamburger').click(function() {
 	$('.menu').toggleClass('close'); //closing hamburger animation
 	$('#menu').toggle().addClass('overlay');
-	$('#nav-top').toggleClass('fixed-top');
 });
 
 $('#hamburger li a').click(function(){
 	$('#menu').fadeOut();
 });
 
+
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 
 // Fade in on scroll
 
