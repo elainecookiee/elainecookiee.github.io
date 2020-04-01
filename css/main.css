@@ -145,6 +145,7 @@ ul {
   animation-name: fadeIn;
 }
 
+
 /*Navigation --------------------------------------------------------------*/
 
 #elaine-logo{
@@ -503,7 +504,7 @@ iframe {margin-left: 25%;}
 /*X-Large*/
 @media (min-width: 1024px) {
   .about-me{
-    width: 60%;
+    width: 55%;
   }
 
 }
