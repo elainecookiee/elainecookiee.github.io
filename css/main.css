@@ -13,13 +13,13 @@ h2 { font-size: 1.728em; }
 h3 { font-size: 1.44em; }
 h4 { font-size: 1.2em }
 h5 { font-size: 1em; }
-p { font-size: 1em; }
+p { font-size: 1em;}
 
 
 /*Fonts --------------------------------------------------------------*/
 body {
   color: #666666;
-  font-family: 'Poppins', 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.7;
   letter-spacing: .02em;
@@ -27,6 +27,11 @@ body {
 
 h4 {
   margin-top: 2em;
+}
+
+.intro h1 {
+  font-size: 2em;
+  font-family: 'Poppins', 'Open Sans', sans-serif;
 }
 
 .header {
@@ -83,7 +88,7 @@ a:hover {
 
 #menu li.active{
   color: #E78E8E;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 ol {
@@ -92,7 +97,7 @@ ol {
 }
 
 ul {
-  list-style-type: square;
+  list-style-type: disc;
   margin-left: 5%;
 }
 
@@ -156,6 +161,7 @@ ul {
 }
 
 #menu li {
+  font-family:'Poppins', 'Open Sans', sans-serif;
   display: flex;
   justify-content: center;
   padding: 1em;
@@ -393,8 +399,9 @@ iframe {margin-left: 25%;}
 }
 
 .about-me p {
-  padding-top: 0.75em;
+  padding-top: 1em;
 }
+
 .about-picture {width: 100%;}
 
 
@@ -405,7 +412,7 @@ iframe {margin-left: 25%;}
 
   #elaine-logo{ width: 15%; }
 
-  h1 {font-size: 2.5em;}
+  .intro h1 {font-size: 2.5em;}
 
   .project-container {width:60%;}
 }
@@ -474,7 +481,7 @@ iframe {margin-left: 25%;}
 /*Large - Desktop size 2 project*/
 @media (min-width: 960px) {
 
-  h1 {font-size: 3em;}
+  .intro h1 {font-size: 3em;}
 
   #elaine-logo{
     width: 8%;
@@ -529,7 +536,7 @@ iframe {margin-left: 25%;}
 
 #footer-active {
   opacity: 1;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /*Loading Screen--------------------------------------------------------------*/

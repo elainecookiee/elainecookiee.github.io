@@ -1,0 +1,117 @@
+/*New Project Style --------------------------------------------------------------*/
+
+.project h3{
+  color: #424242;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: 'Poppins', 'Open Sans';
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0;
+  letter-spacing: 0.025em;
+}
+
+.project h4, .project p{
+  width: 90%;
+  margin: 0 5%;
+}
+
+.project h4{
+  color: #424242;
+  font-size: 1.2em;
+  font-weight: 600;
+  font-family: 'Poppins', 'Open Sans';
+  letter-spacing: 0.025em;
+}
+
+.project p, .list-styling li{
+  font-size: 0.95em;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  padding-bottom: 2em;
+}
+
+.section-divider{
+  padding: 40px 0;
+  text-align:center;
+}
+
+.dot{
+  display: inline-block;
+  border-radius: 5px;
+  width: 5px;
+  height: 5px;
+  background-color: #666;
+  margin: 10px;
+}
+
+.list-styling{
+  margin: 0 10%;
+  padding-bottom: 2em;
+}
+
+.list-styling li{
+  padding-bottom: 1em;
+}
+
+hr {
+  border: 0.5px solid #666;
+  width: 45px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+
+
+@media (min-width: 760px) {
+  .project{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20%;
+  }
+
+  .project h4, .project p{
+    width: 100%;
+    margin: 0;
+  }
+
+  .overview{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .overview-section-left{
+    width: 60%;
+  }
+
+  .overview-section-right{
+    width: 40%;
+    padding-left: 8%;
+  }
+
+  .list-styling{
+    margin: 0 15%;
+  }
+}
+
+@media (min-width: 960px) {
+  .project{
+    margin-top: 12%;
+    width: 55%;
+  }
+
+  .overview-section-right{
+    width: 25%;
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+
+  .list-styling{
+    margin: 0 10%;
+    width: 80%;
+  }
+
+}
