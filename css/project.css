@@ -2,11 +2,10 @@
 
 .project h3{
   color: #424242;
-  font-size: 26px;
+  font-size: 32px;
   font-weight: 700;
   font-family: 'Poppins', 'Open Sans';
   text-align: center;
-  text-transform: uppercase;
   margin: 20px 0;
   letter-spacing: 0.025em;
 }
@@ -18,14 +17,14 @@
 
 .project h4{
   color: #424242;
-  font-size: 1.2em;
-  font-weight: 600;
+  font-size: 1.25em;
+  font-weight: 700;
   font-family: 'Poppins', 'Open Sans';
   letter-spacing: 0.025em;
 }
 
 .project p, .list-styling li{
-  font-size: 0.95em;
+  font-size: 1em;
   font-family: 'Open Sans';
   font-weight: 400;
   padding-bottom: 2em;
@@ -51,8 +50,13 @@
 }
 
 .list-styling li{
-  padding-bottom: 1em;
+  padding-bottom: 0.05em;
 }
+
+img{
+  width:100%;
+}
+
 
 hr {
   border: 0.5px solid #666;
@@ -99,13 +103,13 @@ hr {
 
 @media (min-width: 960px) {
   .project{
-    margin-top: 12%;
-    width: 55%;
+    margin-top:5%;
+    width: 50%;
   }
 
   .overview-section-right{
     width: 25%;
-    padding-left: 10%;
+    padding-left: 8%;
     padding-right: 5%;
   }
 
