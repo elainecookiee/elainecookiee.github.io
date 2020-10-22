@@ -15,6 +15,14 @@
   margin: 0 5%;
 }
 
+#subhead {
+  color: #424242;
+  font-size: 1.1em;
+  font-weight: 700;
+  font-family: 'Poppins', 'Open Sans';
+  padding-bottom: 0.5em;
+}
+
 .project h4{
   color: #424242;
   font-size: 1.25em;
@@ -114,7 +122,7 @@ hr {
   }
 
   .list-styling{
-    margin: 0 10%;
+    margin: 0 5%;
     width: 80%;
   }
 
