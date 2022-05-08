@@ -404,6 +404,10 @@ iframe {margin-left: 25%;}
 
 .about-picture {width: 100%;}
 
+.contact-info p {
+  padding: 0;
+}
+
 
 /*Media Queries --------------------------------------------------------------*/
 
