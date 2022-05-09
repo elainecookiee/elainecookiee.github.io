@@ -398,15 +398,24 @@ iframe {margin-left: 25%;}
   text-align: left;
 }
 
+.about-me h2 {
+  font-size: 1.5em;
+}
+
 .about-me p {
   padding-top: 1em;
 }
 
-.about-picture {width: 100%;}
+.about-picture img {width: 100%;}
+
+.contact-info {
+  margin-bottom:  24px;
+}
 
 .contact-info p {
   padding: 0;
 }
+
 
 
 /*Media Queries --------------------------------------------------------------*/
@@ -479,7 +488,7 @@ iframe {margin-left: 25%;}
 
   .about-me h2 {font-size: 1.75em;}
   .about-me {width: 70%; margin-top: 8em;}
-  .about-picture {width: 80%; margin: 0 10%;;}
+  .about-picture img {width: 80%; margin: 0 10%;;}
 }
 
 /*Large - Desktop size 2 project*/
@@ -507,15 +516,34 @@ iframe {margin-left: 25%;}
     width: 50%;
   }
 
-  .about-me h2 {text-align: center; font-size: 2.2em;}
-  .about-me{margin-top: 10em;}
-  .about-picture{width: 60%; margin: 0 20%;}
+  .about-me h2 {
+    text-align: left;
+    font-size: 1.5em;
+  }
+
+  .about-me{
+    margin-top: 10em;
+    width: 80%;
+  }
+
+  .about-bio {
+    float: right;
+    margin: 0, 0, 10,0;
+    width: 60%;
+  }
+
+  .about-picture img {
+    width: 35%;
+    margin: 0;
+    padding: 0;
+  }
+
 }
 
 /*X-Large*/
 @media (min-width: 1024px) {
   .about-me{
-    width: 55%;
+    width: 70%;
   }
 
 }
