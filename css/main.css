@@ -106,6 +106,7 @@ ul {
   background-color: rgba(231,142,142, 0.5);
 }
 
+
 /*Animation --------------------------------------------------------------*/
 
 .animated {
@@ -391,32 +392,104 @@ iframe {margin-left: 25%;}
 
 /*About Me --------------------------------------------------------------*/
 
-.about-me {
+.full-page {
   width: 85%;
   padding-top: 1.5em;
   margin: 0 auto;
   text-align: left;
 }
 
-.about-me h2 {
+.full-page h2 {
   font-size: 1.4em;
 }
 
-.about-me p {
-  padding-top: 1em;
+.full-page p {
+  padding-top: 8px;
 }
 
-.about-picture img {width: 100%;}
+.about-picture img {width: 100%; margin-bottom: 5%;}
 
 .contact-info {
-  margin-bottom:  24px;
+  margin-bottom: 24px;
 }
 
 .contact-info p {
   padding: 0;
+  color:  #424242;
 }
 
+/*Writing --------------------------------------------------------------*/
 
+.tag {
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-bottom: 16px;
+}
+
+.blog-section {
+  margin-bottom: 64px;
+}
+
+.blog-section:nth-child(3) {
+  margin-top: 80px;
+}
+
+img.blog{
+  width: 100%;
+  border-radius: 4px;
+  height: 50%;
+  overflow: hidden;
+}
+
+.blog-date {
+  font-size: 0.8em;
+}
+
+.blog-title {
+  color:  #424242;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.blog-article-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.blog-article {
+  width: 100%;
+}
+
+img.thumbnail {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.horizontal-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.webinar-title {
+  color:  #424242;
+  font-weight: 600;
+}
+
+.horizontal-content {
+  margin: 16px 0 40px 0;
+}
+ 
+.horizontal-content p{
+  padding: 0;
+}
+
+.horizontal-content p:nth-child(3){
+  padding-top: 16px;
+}
 
 /*Media Queries --------------------------------------------------------------*/
 
@@ -428,6 +501,7 @@ iframe {margin-left: 25%;}
   .intro h1 {font-size: 2.5em;}
 
   .project-container {width:60%;}
+
 }
 
 /*Medium - Show Nav and 2 projects*/
@@ -486,9 +560,43 @@ iframe {margin-left: 25%;}
 
   .section{ width: 60%;}
 
-  .about-me h2 {font-size: 1.75em;}
-  .about-me {width: 70%; margin-top: 8em;}
+  .full-page h2 {font-size: 1.75em;}
+  .full-page {width: 70%; margin-top: 8em;}
   .about-picture img {width: 80%; margin: 0 10%;;}
+
+  .tag {
+    font-size: 0.8em;
+  }
+
+  img.blog{
+    height: 35%;
+  }
+
+  .blog-article-container {
+    gap: 16px;
+  }
+
+  .blog-article {
+    width: 48%;
+  }
+
+  img.thumbnail {
+    width: 40%;
+    height: 35%;
+  }
+
+  .horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .horizontal-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
 }
 
 /*Large - Desktop size 2 project*/
@@ -516,19 +624,19 @@ iframe {margin-left: 25%;}
     width: 50%;
   }
 
-  .about-me h2 {
+  .full-page h2 {
     text-align: left;
     font-size: 1.5em;
   }
 
-  .about-me{
+  .full-page {
     margin-top: 10em;
     width: 80%;
   }
 
   .about-bio {
     float: right;
-    margin: 0, 0, 10,0;
+    margin: 0, 0, 5%,0;
     width: 60%;
   }
 
@@ -538,12 +646,42 @@ iframe {margin-left: 25%;}
     padding: 0;
   }
 
+  img.blog{
+    height: 40%;
+  }
+
+  .blog-section {width: 60%;}
+  .blog-title {font-size: 1em;}
+  .blog-content {font-size: 0.9em;}
+
+  .blog-article-container {
+      gap: 40px;
+      row-gap:  64px;
+  }
+
+  .blog-article {
+    width: 30%;
+  }
+
+  img.thumbnail {
+    width: 30%;
+    height: 40%;
+  }
+
+  .horizontal-content {
+    margin: 0 0 40px 0;
+  }
+
 }
 
 /*X-Large*/
 @media (min-width: 1024px) {
-  .about-me{
+  .full-page {
     width: 70%;
+  }
+
+  .horizontal {
+    width: 90%;
   }
 
 }
