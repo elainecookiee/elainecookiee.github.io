@@ -38,7 +38,7 @@ h4 {
   color: #4A4A4A;
   font-family: 'Poppins', sans-serif;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0;
 }
 
@@ -151,6 +151,12 @@ ul {
   animation-name: fadeIn;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
 
 /*Navigation --------------------------------------------------------------*/
 
@@ -390,6 +396,7 @@ iframe {margin-left: 25%;}
   margin-bottom: 2em;
 }
 
+
 /*About Me --------------------------------------------------------------*/
 
 .full-page {
@@ -622,10 +629,6 @@ img.thumbnail {
 
   .card-style {
     margin: 1.66%;
-  }
-
-  .section{
-    width: 50%;
   }
 
   .full-page h2 {
