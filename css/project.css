@@ -59,6 +59,32 @@ hr{
   column-gap: 24px;
 }
 
+.DTS_card {
+  padding: 24px;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  box-shadow: 0 0 32px rgba(0,0,0,.09);
+}
+
+.DTS_card h4{
+  text-align: center;
+  font-weight: 600;
+  margin:  0.5em 0;
+}
+
+.DTS_card p {
+font-size: 14px;
+}
+
+.DTS_card img {
+  margin-left: 50%;
+}
+
+
+
 
 /*Media Queries*/
 
@@ -113,5 +139,16 @@ hr{
     display: flex;
     justify-content: space-between;
   }
+
+  .card-row {
+    display: flex;
+    column-gap: 24px;
+  }
+
+  .DTS_card {
+    width: 50%;
+    margin-bottom: 24px;
+  }
+
 
 }
