@@ -1,132 +1,117 @@
 /*New Project Style --------------------------------------------------------------*/
 
-.project h3{
-  color: #424242;
-  font-size: 32px;
-  font-weight: 700;
-  font-family: 'Poppins', 'Open Sans';
-  text-align: center;
-  margin: 20px 0;
-  letter-spacing: 0.025em;
+h1, h2, h3 {
+  font-family: 'Poppins';
 }
 
-.project h4, .project p{
-  width: 90%;
-  margin: 0 5%;
+strong{
+  color:  #424242;
 }
 
-#subhead {
-  color: #424242;
-  font-size: 1.1em;
-  font-weight: 700;
-  font-family: 'Poppins', 'Open Sans';
-  padding-bottom: 0.5em;
+hr{
+  width: 60px;
+  margin-bottom: 24px;
 }
 
-.project h4{
-  color: #424242;
-  font-size: 1.25em;
-  font-weight: 700;
-  font-family: 'Poppins', 'Open Sans';
-  letter-spacing: 0.025em;
+.three-col div{
+  padding-bottom: 24px;
 }
 
-.project p, .list-styling li{
-  font-size: 1em;
-  font-family: 'Open Sans';
-  font-weight: 400;
-  padding-bottom: 2em;
+.two-col-33 {
+  max-width: 80%;
+  padding: 16px;
 }
 
-.section-divider{
-  padding: 40px 0;
-  text-align:center;
+.two-col img{
+  width:  100%;
 }
 
-.dot{
-  display: inline-block;
-  border-radius: 5px;
-  width: 5px;
-  height: 5px;
-  background-color: #666;
-  margin: 10px;
-}
-
-.list-styling{
-  margin: 0 10%;
-  padding-bottom: 2em;
-}
-
-.list-styling li{
-  padding-bottom: 0.05em;
-}
-
-img{
-  width:100%;
-}
-
-
-hr {
-  border: 0.5px solid #666;
-  width: 45px;
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-
-/*Image Styling*/
-.casestudy-image {
+.img-fullscreen{
   width: 100%;
 }
 
-@media (min-width: 760px) {
-  .project{
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 20%;
-  }
-
-  .project h4, .project p{
-    width: 100%;
-    margin: 0;
-  }
-
-  .overview{
-    margin-top: 5%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .overview-section-left{
-    width: 60%;
-  }
-
-  .overview-section-right{
-    width: 40%;
-    padding-left: 8%;
-  }
-
-  .list-styling{
-    margin: 0 15%;
-  }
+.img-50{
+  width: 50%;
 }
 
-@media (min-width: 960px) {
-  .project{
-    margin-top:5%;
-    width: 50%;
+.feature-section {
+  background: #F8F7F6;
+  padding: 4em 16px;
+  margin: 0 auto;
+}
+
+.feature-section-content {
+  width: 90%;
+}
+
+.design-process-title{
+  margin-top: 2%;
+  text-align: center;
+}
+
+.avatar{
+  width: 60px;
+  height: 60px;
+}
+
+.avatar-text{
+  display: flex;
+  column-gap: 24px;
+}
+
+
+/*Media Queries*/
+
+/*Small - Hamburger and 1 project*/
+@media (min-width: 600px) {
+  display: flex;
+
+}
+
+/*Medium - Show Nav and 2 projects*/
+@media (min-width: 760px) {
+
+  #nav-top{
+    height: 120px;
   }
 
-  .overview-section-right{
-    width: 25%;
-    padding-left: 8%;
-    padding-right: 5%;
-  }
-
-  .list-styling{
-    margin: 0 5%;
+  .two-col {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 5%;
     width: 80%;
+  }
+
+  .two-col-33 {
+    max-width: 33%;
+    margin:  auto;
+    padding: 40px;
+  }
+
+  .two-col-50 div {
+    max-width: 50%;
+  }
+
+  #reverse{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .feature-section-content {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+}
+
+/*Large - Desktop size 2 project*/
+@media (min-width: 960px) {
+
+
+  .three-col{
+    display: flex;
+    justify-content: space-between;
   }
 
 }
