@@ -75,14 +75,21 @@ hr{
   margin:  0.5em 0;
 }
 
-.DTS_card p {
-font-size: 14px;
+.DTS_card p, .Inspo_card p, .Inspo_card li {
+  font-size: 14px;
 }
 
 .DTS_card img {
   margin-left: 50%;
 }
 
+.Inspo_card {
+  background-color: #f8f7f6;
+  padding: 24px;
+  margin-bottom: 1em;
+/*  border: 1px solid lightgray;*/
+  border-radius: 4px;
+}
 
 
 
@@ -148,6 +155,10 @@ font-size: 14px;
   .DTS_card {
     width: 50%;
     margin-bottom: 24px;
+  }
+
+  .Inspo_card {
+    width: 33%;
   }
 
 
