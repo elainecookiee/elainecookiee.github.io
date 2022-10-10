@@ -34,6 +34,20 @@ hr{
   width: 50%;
 }
 
+.section-divider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 40px 0;
+  column-gap: 24px;
+}
+
+.dot {
+  width: 4px;
+  height:  4px;
+  background-color: #424242;
+}
+
 .feature-section {
   background: #F8F7F6;
   padding: 4em 16px;
