@@ -137,6 +137,10 @@ hr{
   color: #ffffff;
 }
 
+#resource_library {
+  width: 90%;
+}
+
 /*Media Queries*/
 
 /*Small - Hamburger and 1 project*/
@@ -208,6 +212,10 @@ hr{
 
   .Inspo_card {
     width: 33%;
+  }
+
+  #resource_library {
+    width: 50%;
   }
 
 
