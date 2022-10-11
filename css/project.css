@@ -121,6 +121,21 @@ hr{
   margin-top: 2em;
 }
 
+.approach {
+  display: flex;
+  background-color: #2F3742;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.approach div {
+  width: 33%;
+}
+
+.approach p, .approach ul {
+  font-size: 0.75em;
+  color: #ffffff;
+}
 
 /*Media Queries*/
 
