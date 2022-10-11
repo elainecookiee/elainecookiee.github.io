@@ -125,7 +125,8 @@ hr{
   display: flex;
   background-color: #2F3742;
   margin: 0 auto;
-  padding: 24px 16px;
+  padding: 24px;
+  column-gap: 40px;
 }
 
 .approach div {
@@ -136,6 +137,11 @@ hr{
   font-size: 0.75em;
   color: #ffffff;
 }
+
+.approach strong {
+  color: #ffffff;
+}
+
 
 #resource_library {
   width: 90%;
