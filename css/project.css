@@ -147,6 +147,14 @@ hr{
   width: 90%;
 }
 
+.round-corners {
+  border-radius:  10px;
+}
+
+
+
+
+
 /*Media Queries*/
 
 /*Small - Hamburger and 1 project*/
