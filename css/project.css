@@ -70,6 +70,17 @@ hr{
   width: 90%;
 }
 
+.feature-section-dark {
+  background: #242c2f;
+  color: white;
+  padding: 8em 16px;
+  margin: 2em auto;
+}
+
+.feature-section-dark-content {
+  width: 95%;
+}
+
 .design-process-title{
   margin-top: 2%;
   text-align: center;
@@ -200,6 +211,11 @@ hr{
   }
 
   .feature-section-content {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .feature-section-dark-content {
     width: 60%;
     margin: 0 auto;
   }
