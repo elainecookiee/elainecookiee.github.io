@@ -358,10 +358,11 @@ img.card{
 .responsive-banner-ds {background-image: url(../images/DS/banner.png);}
 .responsive-banner-brandkit {background-image: url(../images/brandkit/banner1.png);}
 .responsive-banner-ign {background-image: url(../images/ign/banner.png);}
+.responsive-banner-amp {background-image: url(../images/amp/banner.png);}
 
 .responsive-banner{
   width:100%;
-  height: 400px;
+  height: 420px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
